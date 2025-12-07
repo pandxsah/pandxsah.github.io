@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Projects | Sahil Pandita</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+</head>
+
+<body class="light bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+
+  <!-- Navbar -->
+  <header class="fixed w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm">
+    <div class="container mx-auto px-6 py-4">
+      <nav class="flex items-center justify-between">
+
+        <a href="index.html" class="text-xl font-bold">Sahil Pandita</a>
+
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="experience.html">Experience</a>
+          <a href="projects.html" class="text-blue-400">Projects</a>
+          <a href="case-studies.html">Case Studies</a>
+          <a href="skills.html">Skills</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <button id="mobile-menu-button" class="md:hidden p-2">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 shadow-lg">
+      <div class="px-6 py-4 flex flex-col space-y-4">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <section class="pt-32 pb-24">
+    <div class="container mx-auto px-6">
+
+      <h1 class="text-4xl font-bold mb-4">Selected <span class="text-blue-500">Projects</span></h1>
+      <p class="text-gray-500 dark:text-gray-400 max-w-xl">
+        A few examples of catalog, PPC, and operations projects I’ve delivered across brands and categories.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-14">
+
+        <!-- Reuse cards from index -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" class="h-48 w-full object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">High Priority SKU Operations Fix</h3>
+            <p class="text-gray-400 mb-4">
+              Fixed catalog attributes blocking search visibility and fulfilment.
+            </p>
+            <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">Catalog Ops</span>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+          <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=1200&q=80" class="h-48 w-full object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Catalog Update Automation</h3>
+            <p class="text-gray-400 mb-4">
+              Built templates and removed manual steps for faster updates.
+            </p>
+            <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">Excel</span>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+          <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1200&q=80" class="h-48 w-full object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Amazon PPC Spend Clean-up</h3>
+            <p class="text-gray-400 mb-4">
+              Reduced wasted spend and improved ROAS through search term clean-up.
+            </p>
+            <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">Amazon PPC</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-14 text-center">
+        <button onclick="openModal()"
+          class="px-8 py-3 bg-blue-600 text-white rounded-xl shadow hover:opacity-90 transition">
+          Start a conversation
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 dark:bg-gray-800 py-10">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between">
+      <div>
+        <a href="index.html" class="font-bold">Sahil Pandita</a>
+        <p class="text-gray-500 mt-2">© 2025 Sahil Pandita</p>
+      </div>
+
+      <div class="flex space-x-6 mt-6 md:mt-0">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal opener -->
+  <script>
+    function openModal(){
+      const modal = parent.document.getElementById('contactModal')
+      if(modal){
+        modal.classList.remove('hidden')
+      }
+    }
+
+    const btn = document.getElementById('mobile-menu-button')
+    const menu = document.getElementById('mobile-menu')
+    btn.addEventListener('click', ()=> menu.classList.toggle('hidden'))
+  </script>
+
+</body>
+</html>
