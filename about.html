@@ -3,235 +3,363 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>About · Sahil Pandita | eCommerce Ops & Ads</title>
-
-  <meta name="description" content="Learn more about Sahil Pandita, an eCommerce Operations and Amazon Ads specialist based in Bangalore.">
-  <link rel="icon" href="https://avatars.githubusercontent.com/sahilpandita97">
+  <title>About · Sahil Pandita</title>
+  <meta name="description" content="About Sahil Pandita, eCommerce Ops and Amazon Ads specialist based in Bangalore.">
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            primary: { light: '#3b82f6', dark: '#2563eb' },
-            secondary: { light: '#10b981', dark: '#059669' }
-          }
-        }
-      }
-    }
-  </script>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
-    .gradient-text {
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
+    body{font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    .gradient-text{
+      background-image:linear-gradient(to right,#38bdf8,#34d399);
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
     }
-    .light .gradient-text {
-      background-image: linear-gradient(45deg, #3b82f6, #10b981);
+    .nav-link{
+      position:relative;
+      padding-bottom:2px;
+      transition:color .18s ease;
     }
-    .dark .gradient-text {
-      background-image: linear-gradient(45deg, #60a5fa, #34d399);
+    .nav-link::after{
+      content:"";
+      position:absolute;
+      left:0;
+      bottom:-3px;
+      width:0;
+      height:2px;
+      border-radius:999px;
+      background:linear-gradient(to right,#38bdf8,#34d399);
+      transition:width .18s ease;
     }
-    .theme-toggle { transition: all 0.3s ease; }
-    .theme-toggle:hover { transform: rotate(30deg); }
-    .nav-link { position: relative; font-size: 0.95rem; }
-    .nav-link::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      bottom: -2px;
-      left: 0;
-      background-color: currentColor;
-      transition: width 0.3s ease;
-    }
-    .nav-link:hover::after { width: 100%; }
+    .nav-link:hover::after{width:100%}
   </style>
 </head>
-<body class="light bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+<body class="bg-slate-950 text-slate-100 antialiased transition-colors duration-300">
 
-  <!-- header -->
-  <header class="fixed w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm">
-    <div class="container mx-auto px-6 py-4">
-      <nav class="flex items-center justify-between">
-        <a href="index.html" class="text-2xl font-bold gradient-text">Sahil Pandita</a>
+  <!-- Header -->
+  <header class="fixed inset-x-0 top-0 z-40 border-b border-slate-800/70 bg-slate-950/85 backdrop-blur-xl">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <a href="index.html" class="text-lg sm:text-xl font-semibold tracking-tight">
+        <span class="gradient-text">Sahil Pandita</span>
+      </a>
 
-        <div class="hidden md:flex space-x-6">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="about.html" class="nav-link">About</a>
-          <a href="experience.html" class="nav-link">Experience</a>
-          <a href="projects.html" class="nav-link">Projects</a>
-          <a href="case-studies.html" class="nav-link">Case studies</a>
-          <a href="skills.html" class="nav-link">Skills</a>
-          <a href="contact.html" class="nav-link">Contact</a>
-        </div>
-
-        <div class="flex items-center space-x-4">
-          <button id="theme-toggle" class="theme-toggle p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
-            <i class="fas fa-moon dark:hidden"></i>
-            <i class="fas fa-sun hidden dark:block"></i>
-          </button>
-
-          <button id="mobile-menu-button" class="md:hidden p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a href="index.html" data-nav class="nav-link">Home</a>
+        <a href="about.html" data-nav class="nav-link">About</a>
+        <a href="experience.html" data-nav class="nav-link">Experience</a>
+        <a href="projects.html" data-nav class="nav-link">Projects</a>
+        <a href="case-studies.html" data-nav class="nav-link">Case Studies</a>
+        <a href="skills.html" data-nav class="nav-link">Skills</a>
+        <a href="contact.html" data-nav class="nav-link">Contact</a>
+        <a href="resume.html" data-nav class="nav-link">Resume</a>
       </nav>
-    </div>
 
-    <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 shadow-lg">
-      <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="experience.html" class="nav-link">Experience</a>
-        <a href="projects.html" class="nav-link">Projects</a>
-        <a href="case-studies.html" class="nav-link">Case studies</a>
-        <a href="skills.html" class="nav-link">Skills</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+      <div class="flex items-center gap-2">
+        <button id="themeToggle"
+                class="w-9 h-9 rounded-full border border-slate-700/70 flex items-center justify-center text-slate-200 hover:bg-slate-800 transition">
+          <i id="moonIcon" class="fa-regular fa-moon text-sm"></i>
+          <i id="sunIcon" class="fa-regular fa-sun text-sm text-amber-300 hidden"></i>
+        </button>
+
+        <button id="menuButton"
+                class="md:hidden w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-100">
+          <i class="fa-solid fa-bars text-lg"></i>
+        </button>
       </div>
     </div>
   </header>
 
-  <!-- main content -->
-  <main class="pt-28 pb-16">
-    <div class="container mx-auto px-6 max-w-4xl">
+  <!-- Mobile sheet menu -->
+  <div id="mobileMenu" class="hidden fixed inset-0 z-50 md:hidden">
+    <div class="absolute inset-0 bg-slate-950/70 backdrop-blur-xl"></div>
 
-      <section class="mb-12">
-        <h1 class="text-3xl md:text-4xl font-bold mb-4">
-          About <span class="gradient-text">Sahil Pandita</span>
-        </h1>
-        <p class="text-gray-400 text-sm mb-6">
-          eCommerce operations · Catalog & product support · Amazon Ads · Reporting
-        </p>
-
-        <div class="bg-gray-900/60 border border-gray-700 rounded-2xl p-6 md:p-8">
-          <p class="text-gray-200 mb-4">
-            I work at the junction of catalog quality, fulfilment, and advertising.
-            My main focus is making sure products are ready to sell, easy to find, and supported by clean data and clear reporting.
-          </p>
-          <p class="text-gray-300 mb-4">
-            Over the last few years I have worked on Amazon marketplace accounts across regions,
-            fixing catalog issues, preparing launches, and supporting PPC teams with audits and reporting.
-          </p>
-          <p class="text-gray-300">
-            I like structured, boring processes that quietly prevent problems. Most of my work is about
-            finding the weak points in a workflow, building a simple checklist or template, and then
-            tracking it so the team does not have to think about it again.
-          </p>
-        </div>
-      </section>
-
-      <section class="grid md:grid-cols-2 gap-8 mb-12">
-        <div class="bg-gray-900/60 border border-gray-800 rounded-2xl p-6">
-          <h2 class="text-xl font-semibold mb-3">How I like to work</h2>
-          <ul class="space-y-2 text-gray-300 text-sm">
-            <li>• Start with the data and the defect tickets, not guesses</li>
-            <li>• Write down small playbooks so others can repeat the fix</li>
-            <li>• Keep communication clear with short updates and screenshots</li>
-            <li>• Align with product and tech before making changes in bulk</li>
-            <li>• Measure impact in simple numbers, not huge decks</li>
-          </ul>
+    <div class="absolute inset-x-0 top-0 rounded-b-3xl bg-slate-950 border-b border-slate-800 px-4 pt-16 pb-6 shadow-2xl">
+      <div class="max-w-5xl mx-auto">
+        <div class="space-y-4 text-base">
+          <a href="index.html" data-nav class="block nav-link">Home</a>
+          <a href="about.html" data-nav class="block nav-link">About</a>
+          <a href="experience.html" data-nav class="block nav-link">Experience</a>
+          <a href="projects.html" data-nav class="block nav-link">Projects</a>
+          <a href="case-studies.html" data-nav class="block nav-link">Case Studies</a>
+          <a href="skills.html" data-nav class="block nav-link">Skills</a>
+          <a href="contact.html" data-nav class="block nav-link">Contact</a>
+          <a href="resume.html" data-nav class="block nav-link">Resume</a>
         </div>
 
-        <div class="bg-gray-900/60 border border-gray-800 rounded-2xl p-6">
-          <h2 class="text-xl font-semibold mb-3">What I can help with</h2>
-          <ul class="space-y-2 text-gray-300 text-sm">
-            <li>• Cleaning and standardising product catalogs before peak events</li>
-            <li>• Setting up launch checklists for new products or brands</li>
-            <li>• Supporting PPC teams with search term audits and negatives</li>
-            <li>• Building simple weekly reports in Excel or Sheets</li>
-            <li>• Working with cross-functional teams to close open defects</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="mb-12">
-        <h2 class="text-2xl font-semibold mb-4">Now and next</h2>
-        <div class="bg-gray-900/60 border border-gray-800 rounded-2xl p-6 md:p-7">
-          <p class="text-gray-300 mb-3">
-            <span class="font-semibold">Now:</span> Media Specialist at Flywheel Digital, working on marketplace media and operations.
-          </p>
-          <p class="text-gray-300 mb-3">
-            <span class="font-semibold">Next:</span> I am looking for roles where I can go deeper into
-            product operations, eCommerce operations, or data driven ads management.
-          </p>
-          <p class="text-gray-300">
-            If your team is dealing with broken catalogs, launch chaos, or unclear ad reporting,
-            I would be happy to walk you through my case studies and see if I can help.
-          </p>
-        </div>
-      </section>
-
-      <section class="mb-4">
-        <div class="flex flex-wrap gap-3 items-center">
-          <a href="case-studies.html" class="px-5 py-2.5 bg-primary-light rounded-xl text-white text-sm">
-            View case studies
+        <div class="mt-6 border-t border-slate-800 pt-4 space-y-3 text-sm">
+          <a href="mailto:pandxsah@gmail.com"
+             class="flex items-center gap-3 text-slate-300 hover:text-sky-400">
+            <i class="fa-solid fa-envelope text-sky-400"></i>
+            <span>Email</span>
           </a>
-          <a href="resume.pdf" class="px-5 py-2.5 border border-gray-600 rounded-xl text-sm">
-            Download resume
-          </a>
-          <a href="contact.html" class="text-sm text-gray-400 hover:text-gray-200">
-            Or just say hi →
-          </a>
-        </div>
-      </section>
-
-    </div>
-  </main>
-
-  <!-- footer -->
-  <footer class="bg-gray-100 dark:bg-gray-800 py-10 mt-10">
-    <div class="container mx-auto px-6">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div class="mb-4 md:mb-0 text-center md:text-left">
-          <a href="index.html" class="text-2xl font-bold gradient-text">Sahil Pandita</a>
-          <p class="mt-2 text-gray-600 dark:text-gray-300 text-sm">
-            © 2025 · eCommerce Ops & Ads · <a href="resume.pdf" class="underline">Download resume</a>
-          </p>
-        </div>
-        <div class="flex space-x-5">
-          <a href="https://github.com/sahilpandita97" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gray-200">
-            <i class="fab fa-github text-xl"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/isahilpandita" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gray-200">
-            <i class="fab fa-linkedin-in text-xl"></i>
+          <a href="https://www.linkedin.com/in/isahilpandita" target="_blank" rel="noopener"
+             class="flex items-center gap-3 text-slate-300 hover:text-sky-400">
+            <i class="fa-brands fa-linkedin text-sky-400"></i>
+            <span>LinkedIn</span>
           </a>
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- Main content -->
+  <main class="pt-24 pb-16">
+    <section class="max-w-5xl mx-auto px-4 sm:px-6">
+      <header class="mb-10">
+        <p class="text-sm uppercase tracking-[0.2em] text-slate-400">About</p>
+        <h1 class="mt-2 text-3xl sm:text-4xl font-semibold">
+          Get to know <span class="gradient-text">who I am</span>
+        </h1>
+        <p class="mt-4 text-slate-300 max-w-2xl">
+          I work at the intersection of eCommerce operations, catalog quality, and performance advertising.
+          I like fixing things that block sales and building flows that make future launches smoother.
+        </p>
+      </header>
+
+      <div class="grid gap-8 md:grid-cols-[1.05fr,0.95fr] items-start">
+        <article class="space-y-5 text-slate-200">
+          <p>
+            I have hands-on experience in Amazon catalog operations, troubleshooting defects,
+            analysing search terms, and supporting multi-region launches. Most of my work sits between
+            category, account management, and tech teams.
+          </p>
+          <p>
+            I enjoy taking messy data or broken processes and turning them into clear, repeatable playbooks.
+            From fixing high impact catalog issues before a sale event to improving ROAS by cleaning search terms
+            and restructuring campaigns, I focus on measurable wins.
+          </p>
+          <p>
+            I am currently a <strong>Media Specialist at Flywheel Digital</strong>, and I am open to roles in
+            Product Operations, eCommerce Operations, and Ads or Growth.
+          </p>
+
+          <div class="mt-6 flex flex-wrap gap-3">
+            <span class="px-3 py-1 rounded-full bg-slate-800/80 text-xs text-slate-200 border border-slate-700">
+              Catalog quality
+            </span>
+            <span class="px-3 py-1 rounded-full bg-slate-800/80 text-xs text-slate-200 border border-slate-700">
+              Ops playbooks
+            </span>
+            <span class="px-3 py-1 rounded-full bg-slate-800/80 text-xs text-slate-200 border border-slate-700">
+              Amazon PPC
+            </span>
+          </div>
+
+          <button onclick="openModal()"
+                  class="mt-8 inline-flex items-center gap-2 rounded-xl bg-sky-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-sky-500/35 hover:bg-sky-400">
+            <span>Start a conversation</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </button>
+        </article>
+
+        <aside class="space-y-5">
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+            <h2 class="text-base font-semibold mb-3">How I usually help</h2>
+            <ul class="space-y-2 text-sm text-slate-300">
+              <li>• Cleaning catalog data before key launches</li>
+              <li>• Debugging issues that impact discoverability or fulfilment</li>
+              <li>• Simplifying reporting so teams see the real problems faster</li>
+              <li>• Supporting PPC teams with search-term and ASIN audits</li>
+            </ul>
+          </div>
+
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
+              <div class="mb-2 flex items-center gap-2">
+                <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-sky-500/15 text-sky-400">
+                  <i class="fa-solid fa-box-open text-sm"></i>
+                </div>
+                <p class="text-sm font-semibold">eCommerce & ops</p>
+              </div>
+              <p class="text-xs text-slate-300">
+                Catalog ops, launch readiness, cross-team defect resolution, data checks before roll-outs.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
+              <div class="mb-2 flex items-center gap-2">
+                <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-400">
+                  <i class="fa-solid fa-bullseye text-sm"></i>
+                </div>
+                <p class="text-sm font-semibold">Ads & growth</p>
+              </div>
+              <p class="text-xs text-slate-300">
+                Search-term audits, negative mapping, campaign clean-up, and reporting for decision makers.
+              </p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/70 bg-slate-950/95">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+      <div>
+        <span class="font-semibold text-slate-200">Sahil Pandita</span>
+        <span class="mx-1">·</span>
+        <span>© 2025</span>
+      </div>
+      <div class="flex flex-wrap gap-4">
+        <a href="index.html" class="hover:text-sky-400">Home</a>
+        <a href="about.html" class="hover:text-sky-400">About</a>
+        <a href="experience.html" class="hover:text-sky-400">Experience</a>
+        <a href="projects.html" class="hover:text-sky-400">Projects</a>
+        <a href="case-studies.html" class="hover:text-sky-400">Case Studies</a>
+        <a href="skills.html" class="hover:text-sky-400">Skills</a>
+        <a href="contact.html" class="hover:text-sky-400">Contact</a>
+        <a href="resume.html" class="hover:text-sky-400">Resume</a>
+      </div>
+    </div>
   </footer>
 
+  <!-- Contact modal (same as index) -->
+  <div id="contactModal"
+       class="fixed inset-0 z-[60] hidden items-end justify-center bg-slate-950/70 backdrop-blur-md">
+    <div class="w-full max-w-md rounded-t-3xl border-t border-slate-800 bg-slate-950 px-5 pt-4 pb-6 shadow-2xl">
+      <div class="mx-auto mb-3 h-1 w-12 rounded-full bg-slate-700"></div>
+      <h3 class="text-base font-semibold">Start a conversation</h3>
+      <p class="mt-1 text-xs text-slate-400">
+        Choose where you want to reach me. I usually reply fastest on email.
+      </p>
+
+      <div class="mt-4 space-y-2">
+        <a href="mailto:pandxsah@gmail.com"
+           class="flex items-center justify-between rounded-xl bg-sky-500 px-4 py-2.5 text-sm font-medium text-white">
+          <span class="flex items-center gap-2">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email</span>
+          </span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/isahilpandita" target="_blank" rel="noopener"
+           class="flex items-center justify-between rounded-xl bg-slate-900 px-4 py-2.5 text-sm text-slate-100">
+          <span class="flex items-center gap-2">
+            <i class="fa-brands fa-linkedin text-sky-400"></i>
+            <span>LinkedIn</span>
+          </span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400"></i>
+        </a>
+
+        <a href="https://wa.me/917780871070" target="_blank" rel="noopener"
+           class="flex items-center justify-between rounded-xl bg-slate-900 px-4 py-2.5 text-sm text-slate-100">
+          <span class="flex items-center gap-2">
+            <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+            <span>WhatsApp</span>
+          </span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400"></i>
+        </a>
+
+        <a href="resume.pdf" download
+           class="flex items-center justify-between rounded-xl bg-slate-900 px-4 py-2.5 text-sm text-slate-100">
+          <span class="flex items-center gap-2">
+            <i class="fa-solid fa-file-arrow-down text-sky-400"></i>
+            <span>Download resume</span>
+          </span>
+          <span class="text-[10px] uppercase tracking-wide text-slate-400">PDF</span>
+        </a>
+
+        <button id="copyEmailBtn"
+                onclick="copyEmail()"
+                class="w-full rounded-xl bg-slate-900 px-4 py-2.5 text-sm text-slate-100 text-left">
+          <span class="flex items-center gap-2">
+            <i class="fa-regular fa-copy text-slate-300"></i>
+            <span>Copy email</span>
+          </span>
+        </button>
+      </div>
+
+      <button onclick="closeModal()"
+              class="mt-3 block w-full text-center text-xs text-slate-400">
+        Close
+      </button>
+    </div>
+  </div>
+
+  <!-- Shared scripts -->
   <script>
-    const themeToggle = document.getElementById('theme-toggle');
-    const htmlEl = document.documentElement;
+    const root = document.documentElement;
+    const themeToggle = document.getElementById("themeToggle");
+    const moonIcon = document.getElementById("moonIcon");
+    const sunIcon = document.getElementById("sunIcon");
 
-    const savedTheme = localStorage.getItem('theme') ||
-      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    function applyTheme(theme){
+      root.classList.remove("light","dark");
+      root.classList.add(theme);
+      localStorage.setItem("theme",theme);
+      if(theme==="dark"){
+        moonIcon.classList.add("hidden");
+        sunIcon.classList.remove("hidden");
+      }else{
+        sunIcon.classList.add("hidden");
+        moonIcon.classList.remove("hidden");
+      }
+    }
 
-    htmlEl.classList.remove('light', 'dark');
-    htmlEl.classList.add(savedTheme);
+    (function initTheme(){
+      const stored = localStorage.getItem("theme");
+      if(stored==="light"||stored==="dark"){
+        applyTheme(stored);
+      }else if(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches){
+        applyTheme("dark");
+      }else{
+        applyTheme("light");
+      }
+    })();
 
-    themeToggle.addEventListener('click', () => {
-      const current = htmlEl.classList.contains('dark') ? 'dark' : 'light';
-      const next = current === 'dark' ? 'light' : 'dark';
-      htmlEl.classList.remove('light', 'dark');
-      htmlEl.classList.add(next);
-      localStorage.setItem('theme', next);
+    themeToggle.addEventListener("click",function(){
+      const next = root.classList.contains("dark") ? "light" : "dark";
+      applyTheme(next);
     });
 
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
+    const menuButton = document.getElementById("menuButton");
+    const mobileMenu = document.getElementById("mobileMenu");
 
-    if (mobileMenuButton) {
-      mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
+    menuButton.addEventListener("click",function(){
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    mobileMenu.addEventListener("click",function(e){
+      if(e.target === mobileMenu){
+        mobileMenu.classList.add("hidden");
+      }
+    });
+
+    document.querySelectorAll("#mobileMenu a[data-nav]").forEach(link=>{
+      link.addEventListener("click",()=>mobileMenu.classList.add("hidden"));
+    });
+
+    const currentPath = window.location.pathname.split("/").pop() || "index.html";
+    document.querySelectorAll("a[data-nav]").forEach(link=>{
+      const href = link.getAttribute("href");
+      if(href && href.endsWith(currentPath)){
+        link.classList.add("text-sky-400","font-semibold");
+      }
+    });
+
+    function openModal(){
+      document.getElementById("contactModal").classList.remove("hidden");
+      document.getElementById("contactModal").classList.add("flex");
+    }
+    function closeModal(){
+      const modal = document.getElementById("contactModal");
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    }
+    function copyEmail(){
+      const email = "pandxsah@gmail.com";
+      const btn = document.getElementById("copyEmailBtn");
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(email).then(()=>{
+          btn.innerText = "Copied ✔";
+          setTimeout(()=>{btn.innerText = "Copy email";},1400);
+        });
+      }
     }
   </script>
 </body>
