@@ -1,250 +1,213 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Case Studies · Sahil Pandita | eCommerce Ops & Ads</title>
-
-  <meta name="description" content="Operational and advertising case studies from Sahil Pandita across catalog, fulfilment, and Amazon PPC.">
-  <link rel="icon" href="https://avatars.githubusercontent.com/sahilpandita97">
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+  <title>Case Studies · Sahil Pandita</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            primary: { light: '#3b82f6', dark: '#2563eb' },
-            secondary: { light: '#10b981', dark: '#059669' }
-          }
-        }
-      }
-    }
-  </script>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <style>
-    .gradient-text {
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
+    body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+    .gradient-text{
+      background-image:linear-gradient(to right,#38bdf8,#34d399);
+      -webkit-background-clip:text;
+      color:transparent;
     }
-    .light .gradient-text {
-      background-image: linear-gradient(45deg, #3b82f6, #10b981);
+    .nav-link{
+      position:relative;
+      padding-bottom:2px;
     }
-    .dark .gradient-text {
-      background-image: linear-gradient(45deg, #60a5fa, #34d399);
+    .nav-link::after{
+      content:"";
+      position:absolute;
+      left:0;
+      bottom:-3px;
+      width:0;
+      height:2px;
+      background:linear-gradient(to right,#38bdf8,#34d399);
+      transition:width .18s ease;
     }
-    .theme-toggle { transition: all 0.3s ease; }
-    .theme-toggle:hover { transform: rotate(30deg); }
-    .nav-link { position: relative; font-size: 0.95rem; }
-    .nav-link::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      bottom: -2px;
-      left: 0;
-      background-color: currentColor;
-      transition: width 0.3s ease;
-    }
-    .nav-link:hover::after { width: 100%; }
+    .nav-link:hover::after{width:100%}
   </style>
 </head>
-<body class="light bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
 
-  <!-- header -->
-  <header class="fixed w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm">
-    <div class="container mx-auto px-6 py-4">
-      <nav class="flex items-center justify-between">
-        <a href="index.html" class="text-2xl font-bold gradient-text">Sahil Pandita</a>
+<body class="bg-slate-950 text-slate-100">
 
-        <div class="hidden md:flex space-x-6">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="about.html" class="nav-link">About</a>
-          <a href="experience.html" class="nav-link">Experience</a>
-          <a href="projects.html" class="nav-link">Projects</a>
-          <a href="case-studies.html" class="nav-link">Case studies</a>
-          <a href="skills.html" class="nav-link">Skills</a>
-          <a href="contact.html" class="nav-link">Contact</a>
-        </div>
+<!-- HEADER -->
+<header class="fixed inset-x-0 top-0 z-40 border-b border-slate-800/70 bg-slate-950/85 backdrop-blur-xl">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+    <a href="index.html" class="text-lg sm:text-xl font-semibold">
+      <span class="gradient-text">Sahil Pandita</span>
+    </a>
 
-        <div class="flex items-center space-x-4">
-          <button id="theme-toggle" class="theme-toggle p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
-            <i class="fas fa-moon dark:hidden"></i>
-            <i class="fas fa-sun hidden dark:block"></i>
-          </button>
+    <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+      <a data-nav href="index.html" class="nav-link">Home</a>
+      <a data-nav href="about.html" class="nav-link">About</a>
+      <a data-nav href="experience.html" class="nav-link">Experience</a>
+      <a data-nav href="projects.html" class="nav-link">Projects</a>
+      <a data-nav href="case-studies.html" class="nav-link">Case Studies</a>
+      <a data-nav href="skills.html" class="nav-link">Skills</a>
+      <a data-nav href="contact.html" class="nav-link">Contact</a>
+      <a data-nav href="resume.html" class="nav-link">Resume</a>
+    </nav>
 
-          <button id="mobile-menu-button" class="md:hidden p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-      </nav>
+    <div class="flex items-center gap-2">
+      <button id="themeToggle"
+              class="w-9 h-9 rounded-full border border-slate-700/70 flex items-center justify-center">
+        <i id="moonIcon" class="fa-regular fa-moon"></i>
+        <i id="sunIcon" class="fa-regular fa-sun text-amber-300 hidden"></i>
+      </button>
+
+      <button id="menuButton"
+              class="md:hidden w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
+  </div>
+</header>
 
-    <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 shadow-lg">
-      <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="experience.html" class="nav-link">Experience</a>
-        <a href="projects.html" class="nav-link">Projects</a>
-        <a href="case-studies.html" class="nav-link">Case studies</a>
-        <a href="skills.html" class="nav-link">Skills</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-      </div>
+<!-- MOBILE NAV -->
+<div id="mobileMenu" class="hidden fixed inset-0 z-50 md:hidden">
+  <div class="absolute inset-0 bg-slate-950/70 backdrop-blur-xl"></div>
+  <div class="absolute inset-x-0 top-0 rounded-b-3xl bg-slate-950 border-b border-slate-800 px-4 pt-16 pb-6 shadow-xl">
+    <div class="space-y-4 text-base">
+      <a class="block nav-link" data-nav href="index.html">Home</a>
+      <a class="block nav-link" data-nav href="about.html">About</a>
+      <a class="block nav-link" data-nav href="experience.html">Experience</a>
+      <a class="block nav-link" data-nav href="projects.html">Projects</a>
+      <a class="block nav-link" data-nav href="case-studies.html">Case Studies</a>
+      <a class="block nav-link" data-nav href="skills.html">Skills</a>
+      <a class="block nav-link" data-nav href="contact.html">Contact</a>
+      <a class="block nav-link" data-nav href="resume.html">Resume</a>
     </div>
-  </header>
+  </div>
+</div>
 
-  <!-- main -->
-  <main class="pt-28 pb-16">
-    <div class="container mx-auto px-6 max-w-5xl">
+<!-- MAIN -->
+<main class="pt-24 pb-16">
+  <section class="max-w-5xl mx-auto px-4 sm:px-6">
 
-      <section class="mb-10">
-        <h1 class="text-3xl md:text-4xl font-bold mb-4">
-          Case <span class="gradient-text">Studies</span>
-        </h1>
-        <p class="text-gray-300 max-w-2xl">
-          A few real examples of problems I worked on across catalog, fulfilment, and Amazon PPC.
-          These are written in a simple Problem → Action → Result format so they are easy to skim.
+    <header class="mb-10">
+      <p class="text-sm uppercase tracking-[0.15em] text-slate-400">Case Studies</p>
+      <h1 class="mt-1 text-4xl font-semibold">
+        Real <span class="gradient-text">case studies</span> from real work
+      </h1>
+      <p class="mt-3 text-slate-300 max-w-xl">
+        Deep dives on catalog, PPC, and process outcomes. I can share full PDFs on request.
+      </p>
+    </header>
+
+
+    <div class="space-y-8">
+
+      <article class="p-6 rounded-xl bg-slate-900/60 border border-slate-800">
+        <h2 class="text-xl font-semibold">Operational Defect Fix for High Priority SKUs</h2>
+        <p class="mt-3 text-slate-300 text-sm">
+          Attribute errors blocked search visibility and caused fulfilment problems. I cleaned catalog attributes and validated changes with product and tech during peak.
         </p>
-      </section>
 
-      <section class="grid md:grid-cols-2 gap-6">
+        <ul class="list-disc list-inside text-slate-400 text-sm mt-3 space-y-1">
+          <li>Full catalog audit plus attribute clean up</li>
+          <li>Validation with engineering before peak</li>
+          <li>Fewer production defects and faster indexing</li>
+        </ul>
+      </article>
 
-        <!-- Case 1 -->
-        <article class="bg-gray-900/60 border border-gray-800 rounded-2xl p-6 flex flex-col">
-          <div class="text-xs uppercase tracking-wide text-gray-400 mb-2">Catalog · Operations</div>
-          <h2 class="text-xl font-semibold mb-2">Operational defect fix for high priority SKUs</h2>
-          <p class="text-gray-300 text-sm mb-4">
-            Attribute mismatch, broken search visibility, and fulfilment errors across a small but important set of SKUs.
-          </p>
-          <ul class="text-gray-400 text-sm space-y-1 mb-4">
-            <li>• Mapped defect tickets to specific attributes and templates</li>
-            <li>• Standardised key fields and aligned with product and tech</li>
-            <li>• Re-uploaded in controlled batches with checks</li>
-          </ul>
-          <p class="text-gray-200 text-sm mb-4">
-            <span class="font-semibold">Result:</span> Reduced repeat defects and faster re-indexing before a key sale event.
-          </p>
-          <div class="mt-auto flex flex-wrap gap-2 text-xs">
-            <span class="px-3 py-1 rounded-full bg-gray-800">Catalog Ops</span>
-            <span class="px-3 py-1 rounded-full bg-gray-800">Defect Analysis</span>
-          </div>
-        </article>
+      <article class="p-6 rounded-xl bg-slate-900/60 border border-slate-800">
+        <h2 class="text-xl font-semibold">Catalog Update Automation</h2>
+        <p class="mt-3 text-slate-300 text-sm">
+          Manual steps delayed launches. I built uniform templates and simple checks and removed extra manual inputs.
+        </p>
 
-        <!-- Case 2 -->
-        <article class="bg-gray-900/60 border border-gray-800 rounded-2xl p-6 flex flex-col">
-          <div class="text-xs uppercase tracking-wide text-gray-400 mb-2">PPC · Search Terms</div>
-          <h2 class="text-xl font-semibold mb-2">Amazon PPC spend clean up</h2>
-          <p class="text-gray-300 text-sm mb-4">
-            Multiple campaigns with overlapping keywords, high ACoS, and wasted spend on poor search terms.
-          </p>
-          <ul class="text-gray-400 text-sm space-y-1 mb-4">
-            <li>• Pulled search term reports and grouped by intent</li>
-            <li>• Cut non converting terms and added negatives</li>
-            <li>• Restructured campaigns around tighter themes</li>
-          </ul>
-          <p class="text-gray-200 text-sm mb-4">
-            <span class="font-semibold">Result:</span> Lower wasted spend and a cleaner base to scale from.
-          </p>
-          <div class="mt-auto flex flex-wrap gap-2 text-xs">
-            <span class="px-3 py-1 rounded-full bg-gray-800">Amazon PPC</span>
-            <span class="px-3 py-1 rounded-full bg-gray-800">Search Term Audit</span>
-          </div>
-        </article>
+        <ul class="list-disc list-inside text-slate-400 text-sm mt-3 space-y-1">
+          <li>Time saved and fewer rework tickets</li>
+          <li>Standard upload kits for teams</li>
+          <li>Improved launch consistency</li>
+        </ul>
+      </article>
 
-        <!-- Case 3 -->
-        <article class="bg-gray-900/60 border border-gray-800 rounded-2xl p-6 flex flex-col">
-          <div class="text-xs uppercase tracking-wide text-gray-400 mb-2">Launch · Readiness</div>
-          <h2 class="text-xl font-semibold mb-2">New product launch framework</h2>
-          <p class="text-gray-300 text-sm mb-4">
-            New products were going live with missing content, no clear campaign plan, and delayed keyword indexing.
-          </p>
-          <ul class="text-gray-400 text-sm space-y-1 mb-4">
-            <li>• Created a simple launch checklist for catalog and ads</li>
-            <li>• Defined base campaign structure and naming rules</li>
-            <li>• Set up daily checks for the first two weeks after launch</li>
-          </ul>
-          <p class="text-gray-200 text-sm mb-4">
-            <span class="font-semibold">Result:</span> Faster keyword visibility and more stable early sales.
-          </p>
-          <div class="mt-auto flex flex-wrap gap-2 text-xs">
-            <span class="px-3 py-1 rounded-full bg-gray-800">Launch</span>
-            <span class="px-3 py-1 rounded-full bg-gray-800">Process</span>
-          </div>
-        </article>
+      <article class="p-6 rounded-xl bg-slate-900/60 border border-slate-800">
+        <h2 class="text-xl font-semibold">Amazon PPC Spend Clean Up</h2>
+        <p class="mt-3 text-slate-300 text-sm">
+          High ACoS and messy keyword structure. I cleaned search terms, negative mapping and improved match types.
+        </p>
 
-        <!-- Case 4 (placeholder to expand later) -->
-        <article class="bg-gray-900/40 border border-dashed border-gray-700 rounded-2xl p-6 flex flex-col">
-          <h2 class="text-lg font-semibold mb-2">More coming soon</h2>
-          <p class="text-gray-300 text-sm mb-4">
-            I am writing more detailed breakdowns for cross region catalog migrations and reporting dashboards.
-          </p>
-          <p class="text-gray-400 text-sm mb-4">
-            If you want to see raw sheets or dashboard screenshots, feel free to reach out by email and I can share them privately.
-          </p>
-          <a href="contact.html" class="mt-auto inline-flex items-center text-sm text-gray-300 hover:text-white">
-            Contact me for full deck
-            <i class="fas fa-arrow-right ml-2 text-xs"></i>
-          </a>
-        </article>
-
-      </section>
+        <ul class="list-disc list-inside text-slate-400 text-sm mt-3 space-y-1">
+          <li>Cleaner structure</li>
+          <li>Better ROAS</li>
+          <li>Tighter keyword targeting</li>
+        </ul>
+      </article>
 
     </div>
-  </main>
 
-  <!-- footer -->
-  <footer class="bg-gray-100 dark:bg-gray-800 py-10 mt-10">
-    <div class="container mx-auto px-6">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div class="mb-4 md:mb-0 text-center md:text-left">
-          <a href="index.html" class="text-2xl font-bold gradient-text">Sahil Pandita</a>
-          <p class="mt-2 text-gray-600 dark:text-gray-300 text-sm">
-            © 2025 · eCommerce Ops & Ads · <a href="resume.pdf" class="underline">Download resume</a>
-          </p>
-        </div>
-        <div class="flex space-x-5">
-          <a href="https://github.com/sahilpandita97" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gray-200">
-            <i class="fab fa-github text-xl"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/isahilpandita" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gray-200">
-            <i class="fab fa-linkedin-in text-xl"></i>
-          </a>
-        </div>
-      </div>
+    <div class="mt-12 text-center">
+      <a href="mailto:pandxsah@gmail.com?subject=Request%20full%20case%20studies"
+         class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-slate-700 text-slate-300 hover:border-slate-500 transition">
+        Request full PDFs
+        <i class="fa-solid fa-arrow-right text-xs"></i>
+      </a>
     </div>
-  </footer>
 
-  <script>
-    const themeToggle = document.getElementById('theme-toggle');
-    const htmlEl = document.documentElement;
+  </section>
+</main>
 
-    const savedTheme = localStorage.getItem('theme') ||
-      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+<!-- FOOTER -->
+<footer class="border-t border-slate-800/70 bg-slate-950/95">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-6 text-xs text-slate-400 flex flex-col sm:flex-row justify-between">
+    <span>Sahil Pandita · © 2025</span>
 
-    htmlEl.classList.remove('light', 'dark');
-    htmlEl.classList.add(savedTheme);
+    <div class="flex flex-wrap gap-4">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+      <a href="resume.html">Resume</a>
+    </div>
+  </div>
+</footer>
 
-    themeToggle.addEventListener('click', () => {
-      const current = htmlEl.classList.contains('dark') ? 'dark' : 'light';
-      const next = current === 'dark' ? 'light' : 'dark';
-      htmlEl.classList.remove('light', 'dark');
-      htmlEl.classList.add(next);
-      localStorage.setItem('theme', next);
-    });
+<!-- SHARED SCRIPT -->
+<script>
+const root=document.documentElement
+const themeToggle=document.getElementById("themeToggle")
+const moonIcon=document.getElementById("moonIcon")
+const sunIcon=document.getElementById("sunIcon")
+function applyTheme(t){
+  root.classList.remove("light","dark")
+  root.classList.add(t)
+  localStorage.setItem("theme",t)
+  if(t==="dark"){moonIcon.classList.add("hidden");sunIcon.classList.remove("hidden")}
+  else{sunIcon.classList.add("hidden");moonIcon.classList.remove("hidden")}
+}
+(function(){
+  const s=localStorage.getItem("theme")
+  if(s){applyTheme(s)}
+  else if(window.matchMedia("(prefers-color-scheme: dark)").matches){applyTheme("dark")}
+  else applyTheme("light")
+})();
+themeToggle.addEventListener("click",()=>applyTheme(root.classList.contains("dark")?"light":"dark"))
 
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
+const menuButton=document.getElementById("menuButton")
+const mobileMenu=document.getElementById("mobileMenu")
+menuButton.addEventListener("click",()=>mobileMenu.classList.toggle("hidden"))
+mobileMenu.addEventListener("click",e=>{if(e.target===mobileMenu)mobileMenu.classList.add("hidden")})
+document.querySelectorAll("a[data-nav]").forEach(link=>{link.addEventListener("click",()=>mobileMenu.classList.add("hidden"))})
 
-    if (mobileMenuButton) {
-      mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
-    }
-  </script>
+const current=window.location.pathname.split("/").pop() || "index.html"
+document.querySelectorAll("a[data-nav]").forEach(l=>{
+  if(l.getAttribute("href").endsWith(current)){
+    l.classList.add("text-sky-400","font-semibold")
+  }
+})
+</script>
+
 </body>
 </html>
