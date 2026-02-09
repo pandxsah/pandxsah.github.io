@@ -1,8 +1,8 @@
-async function loadPartial(id, file) {
-  const res = await fetch(file);
-  const html = await res.text();
-  document.getElementById(id).innerHTML = html;
-}
+document.addEventListener("click", (e) => {
+  const menuButton = e.target.closest("#menuButton");
+  const mobileMenu = document.getElementById("mobileMenu");
 
-loadPartial("site-header", "/partials/header.html");
-loadPartial("site-footer", "/partials/footer.html");
+  if (!menuButton || !mobileMenu) return;
+
+  mobileMenu.classList.toggle("hidden");
+});
