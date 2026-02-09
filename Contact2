@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+  <title>Contact · Sahil Pandita</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+    .gradient-text{
+      background-image:linear-gradient(to right,#38bdf8,#34d399);
+      -webkit-background-clip:text;color:transparent;
+    }
+    .nav-link{
+      position:relative;padding-bottom:2px;
+    }
+    .nav-link::after{
+      content:"";position:absolute;left:0;bottom:-3px;width:0;height:2px;
+      background:linear-gradient(to right,#38bdf8,#34d399);
+      transition:width .18s ease;
+    }
+    .nav-link:hover::after{width:100%}
+  </style>
+</head>
+
+<body class="bg-slate-950 text-slate-100">
+
+<!-- HEADER -->
+<header class="fixed inset-x-0 top-0 z-40 border-b border-slate-800/70 bg-slate-950/85 backdrop-blur-xl">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+    <a href="index.html" class="text-lg sm:text-xl font-semibold">
+      <span class="gradient-text">Sahil Pandita</span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+      <a data-nav href="index.html" class="nav-link">Home</a>
+      <a data-nav href="about.html" class="nav-link">About</a>
+      <a data-nav href="experience.html" class="nav-link">Experience</a>
+      <a data-nav href="projects.html" class="nav-link">Projects</a>
+      <a data-nav href="case-studies.html" class="nav-link">Case Studies</a>
+      <a data-nav href="skills.html" class="nav-link">Skills</a>
+      <a data-nav href="contact.html" class="nav-link">Contact</a>
+      <a data-nav href="resume.html" class="nav-link">Resume</a>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <button id="themeToggle"
+              class="w-9 h-9 rounded-full border border-slate-700/70 flex items-center justify-center">
+        <i id="moonIcon" class="fa-regular fa-moon"></i>
+        <i id="sunIcon" class="fa-regular fa-sun text-amber-300 hidden"></i>
+      </button>
+
+      <button id="menuButton"
+              class="md:hidden w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="hidden fixed inset-0 z-50 md:hidden">
+  <div class="absolute inset-0 bg-slate-950/70 backdrop-blur-xl"></div>
+  <div class="absolute inset-x-0 top-0 rounded-b-3xl bg-slate-950 border-b border-slate-800 px-4 pt-16 pb-6 shadow-xl">
+    <div class="space-y-4 text-base">
+      <a class="block nav-link" data-nav href="index.html">Home</a>
+      <a class="block nav-link" data-nav href="about.html">About</a>
+      <a class="block nav-link" data-nav href="experience.html">Experience</a>
+      <a class="block nav-link" data-nav href="projects.html">Projects</a>
+      <a class="block nav-link" data-nav href="case-studies.html">Case Studies</a>
+      <a class="block nav-link" data-nav href="skills.html">Skills</a>
+      <a class="block nav-link" data-nav href="contact.html">Contact</a>
+      <a class="block nav-link" data-nav href="resume.html">Resume</a>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<main class="pt-24 pb-20">
+  <section class="max-w-4xl mx-auto px-4 sm:px-6">
+
+    <header class="mb-12">
+      <p class="text-sm uppercase tracking-[0.15em] text-slate-400">Contact</p>
+      <h1 class="mt-2 text-4xl font-semibold">
+        Let’s <span class="gradient-text">connect</span>
+      </h1>
+      <p class="mt-4 text-slate-300 max-w-xl">
+        Reach out for roles, collaboration, or a quick chat.
+      </p>
+    </header>
+
+    <div class="grid gap-6">
+
+      <a href="mailto:pandxsah@gmail.com"
+         class="group p-6 rounded-2xl bg-slate-900/60 border border-slate-800
+                hover:border-sky-500 transition">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-sky-500/15 text-sky-400
+                      flex items-center justify-center">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold">Email</h3>
+            <p class="text-slate-400 text-sm">pandxsah@gmail.com</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/isahilpandita"
+         target="_blank"
+         class="group p-6 rounded-2xl bg-slate-900/60 border border-slate-800
+                hover:border-sky-500 transition">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-sky-500/15 text-sky-400
+                      flex items-center justify-center">
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold">LinkedIn</h3>
+            <p class="text-slate-400 text-sm">Professional profile</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://github.com/pandxsah"
+         target="_blank"
+         class="group p-6 rounded-2xl bg-slate-900/60 border border-slate-800
+                hover:border-sky-500 transition">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-sky-500/15 text-sky-400
+                      flex items-center justify-center">
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold">GitHub</h3>
+            <p class="text-slate-400 text-sm">Projects & experiments</p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-slate-800/70 bg-slate-950/95">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-6 text-xs text-slate-400 flex flex-col sm:flex-row justify-between">
+    <span>Sahil Pandita · © 2025</span>
+
+    <div class="flex flex-wrap gap-4">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+      <a href="resume.html">Resume</a>
+    </div>
+  </div>
+</footer>
+
+<!-- SHARED SCRIPT -->
+<script>
+const root=document.documentElement
+const themeToggle=document.getElementById("themeToggle")
+const moonIcon=document.getElementById("moonIcon")
+const sunIcon=document.getElementById("sunIcon")
+function applyTheme(t){
+  root.classList.remove("light","dark")
+  root.classList.add(t)
+  localStorage.setItem("theme",t)
+  if(t==="dark"){moonIcon.classList.add("hidden");sunIcon.classList.remove("hidden")}
+  else{sunIcon.classList.add("hidden");moonIcon.classList.remove("hidden")}
+}
+(function(){
+  const s=localStorage.getItem("theme")
+  if(s){applyTheme(s)}
+  else if(window.matchMedia("(prefers-color-scheme: dark)").matches){applyTheme("dark")}
+  else applyTheme("light")
+})();
+themeToggle.addEventListener("click",()=>applyTheme(root.classList.contains("dark")?"light":"dark"))
+
+const menuButton=document.getElementById("menuButton")
+const mobileMenu=document.getElementById("mobileMenu")
+menuButton.addEventListener("click",()=>mobileMenu.classList.toggle("hidden"))
+mobileMenu.addEventListener("click",e=>{if(e.target===mobileMenu)mobileMenu.classList.add("hidden")})
+document.querySelectorAll("a[data-nav]").forEach(link=>{link.addEventListener("click",()=>mobileMenu.classList.add("hidden"))})
+
+const current=window.location.pathname.split("/").pop()||"index.html"
+document.querySelectorAll("a[data-nav]").forEach(l=>{
+  if(l.getAttribute("href").endsWith(current)){
+    l.classList.add("text-sky-400","font-semibold")
+  }
+})
+</script>
+
+</body>
+</html>
