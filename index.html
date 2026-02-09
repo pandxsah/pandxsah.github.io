@@ -1,126 +1,163 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Sahil Pandita · Portfolio</title>
+  <title>Sahil Pandita | eCommerce Operations, Product Support, Catalog & Amazon Ads Specialist</title>
 
-  <!-- Tailwind -->
+  <meta name="description" content="Sahil Pandita — eCommerce Operations, Catalog Optimization, Product Support, and Amazon PPC Specialist based in Bangalore.">
+  <meta name="keywords" content="Sahil Pandita, ecommerce, catalog, amazon ads, PPC, Bangalore">
+
+  <link rel="icon" href="https://avatars.githubusercontent.com/pandxsah">
+
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          animation: {
+            'fade-in': 'fadeIn 0.5s ease-in-out',
+            'slide-up': 'slideUp 0.5s ease-out'
+          },
+          keyframes: {
+            fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+            slideUp: { '0%': { transform: 'translateY(20px)', opacity: '0' }, '100%': { transform: 'translateY(0)', opacity: '1' } }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .gradient-text{
+      background: linear-gradient(45deg,#60a5fa,#22c55e);
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+    }
+    .nav-link{position:relative}
+    .nav-link::after{
+      content:'';position:absolute;left:0;bottom:-4px;width:0;height:2px;
+      background-color:currentColor;transition:width .25s ease
+    }
+    .nav-link:hover::after{width:100%}
+    .float-avatar{animation:float 6s ease-in-out infinite}
+    @keyframes float{
+      0%,100%{transform:translateY(0)}
+      50%{transform:translateY(-6px)}
+    }
+  </style>
 </head>
 
-<body class="bg-slate-950 text-slate-100">
+<body class="bg-slate-950 text-slate-50 transition-colors duration-300">
 
-  <!-- HEADER -->
-  <header class="fixed inset-x-0 top-0 z-40 border-b border-slate-800/70 bg-slate-950/90 backdrop-blur">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+<!-- HEADER -->
+<header class="fixed inset-x-0 top-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center justify-between h-16">
 
-      <!-- Logo -->
-      <a href="index.html" class="text-lg font-semibold text-cyan-400">
+      <a href="index.html" class="text-xl sm:text-2xl font-bold gradient-text">
         Sahil Pandita
       </a>
 
-      <!-- Desktop Nav -->
-      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
-        <a href="index.html" class="hover:text-cyan-400">Home</a>
-        <a href="about.html" class="hover:text-cyan-400">About</a>
-        <a href="experience.html" class="hover:text-cyan-400">Experience</a>
-        <a href="projects.html" class="hover:text-cyan-400">Projects</a>
-        <a href="case-studies.html" class="hover:text-cyan-400">Case Studies</a>
-        <a href="skills.html" class="hover:text-cyan-400">Skills</a>
-        <a href="resume.html" class="hover:text-cyan-400">Resume</a>
-        <a href="contactme.html" class="hover:text-cyan-400">Contact Me</a>
+      <nav class="hidden md:flex items-center space-x-6 text-sm text-slate-200">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="case-studies.html" class="nav-link">Case Studies</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="contactme.html" class="nav-link">Contact Me</a>
+        <a href="resume.html" class="nav-link">Resume</a>
       </nav>
 
-      <!-- Mobile Menu Button -->
-      <button id="menuBtn" class="md:hidden text-slate-200">
-        <i class="fa-solid fa-bars text-lg"></i>
+      <button id="mobile-menu-button" class="md:hidden p-2 rounded-full hover:bg-slate-800">
+        <i class="fa-solid fa-bars"></i>
       </button>
-    </div>
 
-    <!-- Mobile Nav -->
-    <div id="mobileMenu" class="hidden md:hidden border-t border-slate-800 bg-slate-950">
-      <nav class="flex flex-col px-6 py-4 gap-4 text-sm text-slate-300">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="experience.html">Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="case-studies.html">Case Studies</a>
-        <a href="skills.html">Skills</a>
-        <a href="resume.html">Resume</a>
-        <a href="contactme.html">Contact Me</a>
-      </nav>
     </div>
-  </header>
+  </div>
+
+  <div id="mobile-menu" class="md:hidden hidden bg-slate-900 border-t border-slate-800">
+    <div class="px-4 py-4 space-y-3">
+      <a href="index.html" class="nav-link block">Home</a>
+      <a href="about.html" class="nav-link block">About</a>
+      <a href="experience.html" class="nav-link block">Experience</a>
+      <a href="projects.html" class="nav-link block">Projects</a>
+      <a href="case-studies.html" class="nav-link block">Case Studies</a>
+      <a href="skills.html" class="nav-link block">Skills</a>
+      <a href="contactme.html" class="nav-link block">Contact Me</a>
+      <a href="resume.html" class="nav-link block">Resume</a>
+    </div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main class="pt-24">
 
   <!-- HERO -->
-  <main class="pt-28">
-    <section class="max-w-6xl mx-auto px-4 py-24">
+  <section class="min-h-screen flex items-center">
+    <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
 
-      <p class="text-sm uppercase tracking-[0.2em] text-slate-400">
-        Portfolio
-      </p>
+      <div class="space-y-6">
+        <p class="text-xs tracking-widest text-sky-400 uppercase">Portfolio</p>
 
-      <h1 class="mt-4 text-4xl md:text-5xl font-semibold leading-tight">
-        Hi, I’m <span class="text-cyan-400">Sahil Pandita</span>
-      </h1>
+        <h1 class="text-4xl md:text-5xl font-bold">
+          Hi, I’m <span class="gradient-text">Sahil Pandita</span>
+        </h1>
 
-      <p class="mt-6 max-w-2xl text-slate-300">
-        eCommerce & Growth professional with experience in various marketplace
-        operations, ads, and scalable processes.
-      </p>
+        <p class="text-slate-300 max-w-xl">
+          eCommerce & Growth professional with experience in marketplace operations,
+          ads, and scalable processes.
+        </p>
 
-      <div class="mt-10 flex flex-wrap gap-4">
-        <a
-          href="contactme.html"
-          class="px-6 py-3 rounded-xl bg-cyan-500 text-slate-900 font-medium hover:bg-cyan-400 transition"
-        >
-          Contact Me
-        </a>
+        <div class="flex gap-4">
+          <a href="contactme.html"
+             class="px-6 py-3 rounded-xl bg-sky-500 text-black font-semibold hover:bg-sky-400">
+            Contact Me
+          </a>
 
-        <a
-          href="resume.html"
-          class="px-6 py-3 rounded-xl border border-slate-700 text-slate-200 hover:border-cyan-500 hover:text-cyan-400 transition"
-        >
-          View Resume
-        </a>
+          <a href="resume.pdf"
+             class="px-6 py-3 rounded-xl border border-slate-600 hover:bg-slate-800">
+            View Resume
+          </a>
+        </div>
       </div>
-    </section>
-  </main>
 
-  <!-- FOOTER -->
-  <footer class="border-t border-slate-800 py-10">
-    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
-      <p>© 2026 Sahil Pandita</p>
-      <nav class="flex gap-4">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="experience.html">Experience</a>
-      <a href="projects.html">Projects</a>
-      <a href="case-studies.html">Case Studies</a>
-      <a href="skills.html">Skills</a>
-      <a href="resume.html">Resume</a>
-      <a href="contactme.html">Contact Me</a>
-      </nav>
+      <div class="flex justify-center">
+        <div class="relative w-64 h-64 float-avatar">
+          <img src="profile.webp"
+               alt="Sahil Pandita"
+               class="rounded-full border-4 border-sky-400 shadow-lg object-cover">
+        </div>
+      </div>
+
     </div>
-  </footer>
+  </section>
 
-  <!-- Mobile menu JS -->
-  <script>
-    const btn = document.getElementById("menuBtn");
-    const menu = document.getElementById("mobileMenu");
+</main>
 
-    btn.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
-    });
-  </script>
+<!-- FOOTER -->
+<footer class="border-t border-slate-800 py-6">
+  <div class="max-w-5xl mx-auto px-4 flex justify-between text-sm text-slate-400">
+    <span>© 2026 Sahil Pandita</span>
+    <span>Bangalore, India</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('mobile-menu-button')
+    .addEventListener('click',()=>{
+      document.getElementById('mobile-menu').classList.toggle('hidden')
+    })
+</script>
 
 </body>
 </html>
