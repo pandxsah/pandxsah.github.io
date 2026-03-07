@@ -19,11 +19,19 @@ export function Hero() {
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center px-6 pt-20 text-center md:pt-0">
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        className="z-10 flex max-w-4xl flex-col items-center"
-      >
+  initial="hidden"
+  animate="show"
+  variants={{
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15
+      }
+    }
+  }}
+  className="z-10 flex max-w-4xl flex-col items-center"
+>
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
