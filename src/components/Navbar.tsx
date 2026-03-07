@@ -36,7 +36,6 @@ export function Navbar() {
     }
   };
 
-  // Prevent scroll when mobile menu is open
   useEffect(() => {
     if (mobileMenuOpen) {
       document.body.style.overflow = "hidden";
@@ -58,6 +57,7 @@ export function Navbar() {
             : "bg-transparent",
         )}
       >
+        {/* LOGO */}
         <a
           href="#"
           onClick={(e) => handleScroll(e, "body")}
@@ -66,7 +66,7 @@ export function Navbar() {
           SP<span className="text-blue-500">.</span>
         </a>
 
-        {/* Desktop Nav */}
+        {/* DESKTOP NAV */}
         <nav className="hidden md:block">
           <ul className="flex items-center gap-8">
             {navItems.map((item) => (
@@ -74,16 +74,19 @@ export function Navbar() {
                 <a
                   href={item.href}
                   onClick={(e) => handleScroll(e, item.href)}
-                  className="text-sm font-medium text-muted-foreground transition-colors hover:text-white"
+                  className="group relative text-sm font-medium text-muted-foreground transition-colors hover:text-white"
                 >
                   {item.name}
+
+                  {/* Animated underline */}
+                  <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-blue-400 transition-all duration-300 group-hover:w-full" />
                 </a>
               </li>
             ))}
           </ul>
         </nav>
 
-        {/* Mobile Menu Toggle */}
+        {/* MOBILE MENU BUTTON */}
         <button
           className="md:hidden text-white"
           onClick={() => setMobileMenuOpen(true)}
@@ -93,7 +96,7 @@ export function Navbar() {
         </button>
       </motion.header>
 
-      {/* Mobile Menu Overlay */}
+      {/* MOBILE MENU */}
       {mobileMenuOpen && (
         <motion.div
           initial={{ opacity: 0 }}
@@ -105,6 +108,7 @@ export function Navbar() {
             <span className="font-display text-xl font-bold tracking-tighter text-white">
               SP<span className="text-blue-500">.</span>
             </span>
+
             <button
               onClick={() => setMobileMenuOpen(false)}
               className="text-white"
@@ -113,6 +117,7 @@ export function Navbar() {
               <X className="h-6 w-6" />
             </button>
           </div>
+
           <nav className="flex flex-1 flex-col items-center justify-center gap-8">
             {navItems.map((item) => (
               <a
