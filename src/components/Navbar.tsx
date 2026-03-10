@@ -5,6 +5,7 @@ import { cn } from "../lib/utils";
 
 const navItems = [
   { name: "Experience", href: "#experience" },
+  { name: "Case Studies", href: "#projects" },
   { name: "Achievements", href: "#achievements" },
   { name: "Skills", href: "#skills" },
   { name: "Education", href: "#education" },
@@ -13,6 +14,7 @@ const navItems = [
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(false);
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
@@ -29,10 +31,7 @@ export function Navbar() {
     if (element) {
       const offsetTop =
         element.getBoundingClientRect().top + window.scrollY - 80;
-      window.scrollTo({
-        top: offsetTop,
-        behavior: "smooth",
-      });
+      window.scrollTo({ top: offsetTop, behavior: "smooth" });
     }
   };
 
@@ -57,14 +56,28 @@ export function Navbar() {
             : "bg-transparent",
         )}
       >
-        {/* LOGO */}
-        <a
-          href="#"
-          onClick={(e) => handleScroll(e, "body")}
-          className="font-display text-xl font-bold tracking-tighter text-white"
-        >
-          SP<span className="text-blue-500">.</span>
-        </a>
+        {/* LOGO WITH TOOLTIP */}
+        <div className="relative">
+          <a
+            href="#"
+            onClick={(e) => handleScroll(e, "body")}
+            onMouseEnter={() => setShowTooltip(true)}
+            onMouseLeave={() => setShowTooltip(false)}
+            className="font-display text-xl font-bold tracking-tighter text-white"
+          >
+            SP<span className="text-blue-500">.</span>
+          </a>
+
+          {showTooltip && (
+            <motion.div
+              initial={{ opacity: 0, y: 4 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="absolute left-0 top-8 whitespace-nowrap rounded-md border border-white/10 bg-black/80 px-3 py-1.5 text-xs text-gray-300 backdrop-blur-md"
+            >
+              Sahil Pandita
+            </motion.div>
+          )}
+        </div>
 
         {/* DESKTOP NAV */}
         <nav className="hidden md:block">
@@ -77,8 +90,6 @@ export function Navbar() {
                   className="group relative text-sm font-medium text-muted-foreground transition-colors hover:text-white"
                 >
                   {item.name}
-
-                  {/* Animated underline */}
                   <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-blue-400 transition-all duration-300 group-hover:w-full" />
                 </a>
               </li>
@@ -108,7 +119,6 @@ export function Navbar() {
             <span className="font-display text-xl font-bold tracking-tighter text-white">
               SP<span className="text-blue-500">.</span>
             </span>
-
             <button
               onClick={() => setMobileMenuOpen(false)}
               className="text-white"
