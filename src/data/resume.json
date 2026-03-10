@@ -1,9 +1,9 @@
 {
   "basics": {
     "name": "Sahil Pandita",
-    "title": "Marketplace Performance Lead",
+    "title": "Marketplace Growth & Performance Specialist",
     "image": "/profile.webp",
-    "summary": "Client-facing marketplace performance specialist with 5+ years of total professional experience, including 4.5+ years managing global Amazon retail media portfolios. Currently managing EU Amazon accounts across UK and Italian markets, optimising €1.5M+ in annual media investments and leading client strategy, business reviews, and a 4-member performance pod.",
+    "summary": "Client-facing Amazon retail media specialist managing £4.5M+ GMV across EU markets. Open to new opportunities in marketplace growth, retail media, and ecommerce performance roles.",
     "location": "Bangalore, India",
     "email": "pandxsah@gmail.com",
     "phone": "+91-7780871070",
@@ -23,6 +23,17 @@
         "Lead a 4-member performance pod, ensuring campaign execution quality and optimisation delivery.",
         "Leverage AMC and SQL analysis to identify optimisation opportunities and validate incremental revenue contribution.",
         "Track portfolio budget utilisation and support monthly spend reconciliation and billing documentation."
+      ]
+    },
+    {
+      "company": "Aventas (Side Venture)",
+      "role": "Founder",
+      "dates": "2025 – Present",
+      "location": "Bengaluru, India",
+      "bullets": [
+        "Building a full-stack growth agency focused on Amazon marketplace management, Q-commerce, and performance marketing for D2C brands.",
+        "Developed brand architecture, positioning, and go-to-market strategy targeting brands scaling on Amazon and quick-commerce platforms.",
+        "Tagline: Structure that scales."
       ]
     },
     {
@@ -88,7 +99,23 @@
       "context": "ROAS maintained while stabilising TACoS across €25K–€150K/month investments."
     }
   ],
-  "projects": [],
+  "projects": [
+    {
+      "title": "AMC Incrementality & NTB Analysis",
+      "description": "Built custom AMC SQL queries to measure new-to-brand customer acquisition and validate incremental revenue contribution across EU Amazon portfolios. Used outputs to guide budget allocation decisions in MBRs and QBRs.",
+      "tags": ["Amazon Marketing Cloud", "SQL", "Incrementality", "NTB Reporting"]
+    },
+    {
+      "title": "BFCM Demand-Based Budget Reallocation",
+      "description": "Designed and executed a real-time budget reallocation strategy during Black Friday / Cyber Monday, shifting spend toward high-converting demand segments. Delivered 38% revenue uplift vs forecast across EU portfolios.",
+      "tags": ["Budget Strategy", "Amazon Ads", "BFCM", "ROAS Optimisation"]
+    },
+    {
+      "title": "Sub-Category Scale — 900% YoY Growth",
+      "description": "Identified an underpenetrated product sub-category through demand gap analysis and keyword expansion. Scaled from near-zero to 900% YoY growth within 12 months, contributing to 46% total category expansion.",
+      "tags": ["Category Expansion", "Keyword Strategy", "Demand Gap Analysis", "Amazon Search"]
+    }
+  ],
   "skills": [
     {
       "group": "Client & Account Management",
@@ -103,16 +130,20 @@
       "items": [
         "Amazon Ads",
         "Retail Media Networks",
-        "Paid Search Optimisation"
+        "Paid Search Optimisation",
+        "DSP",
+        "Placement Optimisation"
       ]
     },
     {
-      "group": "AI & Analytics",
+      "group": "Analytics & AI",
       "items": [
         "Amazon Marketing Cloud (AMC)",
         "SQL",
         "Incrementality Analysis",
-        "Custom GPT Workflows"
+        "Custom GPT Workflows",
+        "Google Data Studio",
+        "Power BI"
       ]
     },
     {
@@ -120,16 +151,17 @@
       "items": [
         "Campaign Governance",
         "Budget Pacing",
-        "Reporting Cadence"
+        "Reporting Cadence",
+        "Pod Leadership"
       ]
     },
     {
-      "group": "Performance Metrics",
-      "items": ["ROAS", "TACoS", "ACoS", "GMV", "YoY Growth", "Budget Pacing"]
+      "group": "Tools & Platforms",
+      "items": ["Pacvue", "Skai", "CitrusAd", "Criteo", "Amazon Ads Console"]
     },
     {
-      "group": "Tools & Platforms",
-      "items": ["Amazon Ads", "Pacvue", "Skai", "CitrusAd", "Criteo", "Google Data Studio", "Power BI"]
+      "group": "Performance Metrics",
+      "items": ["ROAS", "TACoS", "ACoS", "GMV", "YoY Growth", "NTB Rate"]
     }
   ],
   "education": [
