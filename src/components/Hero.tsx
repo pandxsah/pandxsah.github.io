@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from "motion/react";
-import { ArrowRight, Download, Terminal } from "lucide-react";
+import { ArrowRight, Download, Terminal, Mail, Linkedin } from "lucide-react";
 import resumeData from "../data/resume.json";
 
 export function Hero() {
@@ -44,6 +44,15 @@ export function Hero() {
         animate="show"
         className="z-10 flex max-w-4xl flex-col items-center"
       >
+
+        {/* OPEN TO WORK BADGE */}
+        <motion.div
+          variants={item}
+          className="mb-3 inline-flex items-center gap-2 rounded-full border border-green-500/40 bg-green-500/10 px-4 py-1.5 text-sm font-medium text-green-400 backdrop-blur-md"
+        >
+          <span className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
+          <span>Open to New Opportunities</span>
+        </motion.div>
 
         {/* LOCATION BADGE */}
         <motion.div
@@ -116,6 +125,32 @@ export function Hero() {
           >
             <Download className="h-4 w-4" />
             <span>Download Resume</span>
+          </a>
+        </motion.div>
+
+        {/* CONTACT LINKS */}
+        <motion.div
+          variants={item}
+          className="mt-8 flex items-center gap-6"
+        >
+          <a
+            href="mailto:pandxsah@gmail.com"
+            className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-white"
+          >
+            <Mail className="h-4 w-4" />
+            <span>pandxsah@gmail.com</span>
+          </a>
+
+          <span className="h-4 w-[1px] bg-white/20" />
+
+          <a
+            href="https://www.linkedin.com/in/isahilpandita"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-white"
+          >
+            <Linkedin className="h-4 w-4" />
+            <span>LinkedIn</span>
           </a>
         </motion.div>
 
