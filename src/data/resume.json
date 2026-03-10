@@ -3,7 +3,7 @@
     "name": "Sahil Pandita",
     "title": "Marketplace Performance Lead",
     "image": "/profile.webp",
-    "summary": "Marketplace Performance Lead driving revenue scale across EU Amazon portfolios. Oversee £4.5M+ GMV (UK) and €2.5M+ (Italy) while managing €25K–€150K monthly media investments. Blend enterprise governance experience (process ownership across 35-member global team at Amazon Ads) with agency-side pod leadership (4-member execution team) to scale performance with operational rigor and AI-enabled decision systems.",
+    "summary": "Client-facing marketplace performance specialist with 5+ years of total professional experience, including 4.5+ years managing global Amazon retail media portfolios. Currently managing EU Amazon accounts across UK and Italian markets, optimising €1.5M+ in annual media investments and leading client strategy, business reviews, and a 4-member performance pod.",
     "location": "Bangalore, India",
     "email": "pandxsah@gmail.com",
     "phone": "+91-7780871070",
@@ -16,12 +16,13 @@
       "dates": "Aug 2024 – Present",
       "location": "Bengaluru, India",
       "bullets": [
-        "Own end-to-end Amazon Search and programmatic strategy across 2 EU portfolios supporting £4.5M+ and €2.5M+ GMV.",
-        "Lead a 4-member performance pod – defining optimisation roadmaps, governing execution quality, and setting scaling priorities.",
-        "Drove 28.34% YoY GMV growth while maintaining efficiency benchmarks across €25K–€150K/month investments.",
-        "Delivered 38% revenue uplift vs BFCM forecast through strategic budget reallocation.",
-        "Leverage AMC and SQL for incrementality analysis and media contribution validation.",
-        "Own MBR and QBR narratives influencing stakeholder budget allocation decisions."
+        "Manage Amazon retail media campaigns across EU portfolios (UK and Italy), overseeing €1.5M+ in annual media investments.",
+        "Act as client-facing partner, leading MBRs and QBRs while translating brand objectives into retail media strategies.",
+        "Drove 28.34% YoY GMV growth through demand-driven search expansion, keyword prioritisation, and budget scaling toward high-converting segments.",
+        "Maintain daily pacing reports and weekly performance trackers across all active portfolio accounts.",
+        "Lead a 4-member performance pod, ensuring campaign execution quality and optimisation delivery.",
+        "Leverage AMC and SQL analysis to identify optimisation opportunities and validate incremental revenue contribution.",
+        "Track portfolio budget utilisation and support monthly spend reconciliation and billing documentation."
       ]
     },
     {
@@ -30,10 +31,11 @@
       "dates": "Oct 2023 – Aug 2024",
       "location": "Bengaluru, India",
       "bullets": [
-        "Owned global catalog governance across a 35-member cross-functional team including PMs, BIAs, Program Managers, and Quality Associates.",
-        "Defined SOP frameworks, governed quality benchmarks, and ensured execution compliance across international markets.",
-        "Reduced operational turnaround time by 35% through automation and process redesign.",
-        "Aligned listing governance with paid performance objectives across Ads and Brand stakeholders."
+        "Retail Media & Ads: Managed Sponsored Ads accounts (SA, SB, SD) for advertisers and sellers, conducting ad account audits and delivering optimisation recommendations to improve campaign efficiency.",
+        "Catalog & Retail Operations: Governed catalog quality standards across a 35-member global cross-functional team including PMs, BIAs, and Program Managers.",
+        "Designed SOP frameworks ensuring listing readiness and marketplace compliance across international markets.",
+        "Reduced operational turnaround time by 35% through workflow automation and process redesign.",
+        "Partnered with Ads and Brand teams to align catalog governance with advertiser campaign performance objectives."
       ]
     },
     {
@@ -42,13 +44,15 @@
       "dates": "Oct 2021 – Sep 2023",
       "location": "Bengaluru, India",
       "bullets": [
-        "Maintained 99.8% catalog accuracy while improving processing efficiency by 27%.",
-        "Supported Prime Day and Great Indian Festival through structured cross-team coordination.",
-        "Contributed to SOP creation and onboarding of new associates."
+        "Retail Media & Ads: Supported advertiser and seller ad accounts through Sponsored Ads campaign management (SA, SB, SD), account audits, and performance optimisation recommendations.",
+        "Catalog & Retail Operations: Maintained 99.8% catalog accuracy while improving processing efficiency by 27%.",
+        "Optimised product listings to strengthen search visibility and campaign readiness.",
+        "Supported Prime Day and Great Indian Festival campaigns through cross-team coordination.",
+        "Contributed to SOP documentation and onboarding of new associates."
       ]
     },
     {
-      "company": "BYJU’S",
+      "company": "BYJU'S",
       "role": "Business Development Associate",
       "dates": "Oct 2020 – Sep 2021",
       "location": "Mumbai, India",
@@ -65,15 +69,15 @@
     },
     {
       "metric": "28.34%",
-      "context": "YoY GMV growth delivered."
+      "context": "YoY GMV growth delivered through demand-driven search expansion and media optimisation."
     },
     {
       "metric": "46%",
-      "context": "YoY category expansion driven."
+      "context": "YoY category expansion driven, including 900% YoY growth in a key sub-category."
     },
     {
       "metric": "900%",
-      "context": "YoY scale achieved in one sub-category."
+      "context": "YoY scale achieved in one key sub-category."
     },
     {
       "metric": "38%",
@@ -87,37 +91,36 @@
   "projects": [],
   "skills": [
     {
-      "group": "Amazon Advertising",
+      "group": "Client & Account Management",
       "items": [
-        "Search Architecture",
-        "Bid Governance",
-        "DSP",
-        "Placement Optimisation"
+        "Client Communication",
+        "Stakeholder Management",
+        "MBR/QBR Leadership"
       ]
     },
     {
-      "group": "Marketplace Growth",
+      "group": "Retail Media & Performance Strategy",
       "items": [
-        "Budget Scaling",
-        "Category Expansion",
-        "Demand Gap Identification"
+        "Amazon Ads",
+        "Retail Media Networks",
+        "Paid Search Optimisation"
       ]
     },
     {
       "group": "AI & Analytics",
       "items": [
-        "Custom GPT Workflows",
         "Amazon Marketing Cloud (AMC)",
         "SQL",
-        "Incrementality Analysis"
+        "Incrementality Analysis",
+        "Custom GPT Workflows"
       ]
     },
     {
-      "group": "Leadership",
+      "group": "Operational Delivery",
       "items": [
-        "Pod Oversight (4 Members)",
-        "Global Process Governance (35 Stakeholders)",
-        "MBR/QBR Ownership"
+        "Campaign Governance",
+        "Budget Pacing",
+        "Reporting Cadence"
       ]
     },
     {
@@ -125,8 +128,8 @@
       "items": ["ROAS", "TACoS", "ACoS", "GMV", "YoY Growth", "Budget Pacing"]
     },
     {
-      "group": "Platforms",
-      "items": ["Amazon Ads", "CitrusAd", "Criteo", "Skai", "Pacvue"]
+      "group": "Tools & Platforms",
+      "items": ["Amazon Ads", "Pacvue", "Skai", "CitrusAd", "Criteo", "Google Data Studio", "Power BI"]
     }
   ],
   "education": [
