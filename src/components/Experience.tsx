@@ -16,6 +16,23 @@ export function Experience() {
     )
     .slice(0, 3);
 
+  // Format bullet: bold stream labels like "Retail Media & Ads:" and highlight numbers
+  const formatBullet = (bullet: string) => {
+    // First bold any "Label:" prefix (e.g. "Retail Media & Ads:" or "Catalog & Retail Operations:")
+    let formatted = bullet.replace(
+      /^([^:]+:)/,
+      '<strong class="text-white font-semibold">$1</strong>'
+    );
+
+    // Then highlight numbers/metrics
+    formatted = formatted.replace(
+      /(\d+(?:\.\d+)?%|\d+x|£\d+(?:\.\d+)?M|€\d+(?:\.\d+)?M|€\d+K)/g,
+      '<span class="font-mono text-blue-400 font-medium">$1</span>'
+    );
+
+    return formatted;
+  };
+
   return (
     <section id="experience" className="relative py-24 px-6 md:py-32">
       <div className="mx-auto max-w-5xl">
@@ -108,28 +125,19 @@ export function Experience() {
                 >
                   <div className="px-6 pb-6 pt-2">
                     <ul className="flex flex-col gap-3">
-                      {job.bullets.map((bullet, i) => {
-
-                        const highlightedBullet = bullet.replace(
-                          /(\d+(?:\.\d+)?%|\d+x|£\d+(?:\.\d+)?M|€\d+(?:\.\d+)?M|€\d+K)/g,
-                          '<span class="font-mono text-blue-400 font-medium">$1</span>'
-                        );
-
-                        return (
-                          <li
-                            key={i}
-                            className="flex items-start gap-3 text-sm text-gray-300 md:text-base"
-                          >
-                            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500" />
-
-                            <span
-                              dangerouslySetInnerHTML={{
-                                __html: highlightedBullet,
-                              }}
-                            />
-                          </li>
-                        );
-                      })}
+                      {job.bullets.map((bullet, i) => (
+                        <li
+                          key={i}
+                          className="flex items-start gap-3 text-sm text-gray-300 md:text-base"
+                        >
+                          <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500" />
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: formatBullet(bullet),
+                            }}
+                          />
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </motion.div>
