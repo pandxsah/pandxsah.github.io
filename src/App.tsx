@@ -4,6 +4,7 @@ import { AnimatedBackground } from "./components/AnimatedBackground";
 import { SplashScreen } from "./components/SplashScreen";
 import { Hero } from "./components/Hero";
 import { Experience } from "./components/Experience";
+import { Projects } from "./components/Projects";
 import { Achievements } from "./components/Achievements";
 import { Skills } from "./components/Skills";
 import { Education } from "./components/Education";
@@ -27,6 +28,7 @@ export default function App() {
             <main className="relative z-10 flex flex-col gap-16 md:gap-32 pb-32">
               <Hero />
               <Experience />
+              <Projects />
               <Achievements />
               <Skills />
               <Education />
