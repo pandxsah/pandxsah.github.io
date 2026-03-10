@@ -14,11 +14,11 @@ import { Navbar } from "./components/Navbar";
 import { ScrollProgress } from "./components/ScrollProgress";
 import { ScrollToTop } from "./components/ScrollToTop";
 
-// Google Analytics — replace G-XXXXXXXXXX with your real Measurement ID
+// Google Analytics — replace G-F5FJJB0KZP with your real Measurement ID
 function useAnalytics() {
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX";
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-F5FJJB0KZP";
     script.async = true;
     document.head.appendChild(script);
 
@@ -27,7 +27,7 @@ function useAnalytics() {
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
+      gtag('config', 'G-F5FJJB0KZP');
     `;
     document.head.appendChild(inline);
   }, []);
@@ -39,7 +39,7 @@ export default function App() {
   useAnalytics();
 
   return (
-    <div className="relative min-h-screen bg-[#050505] text-white selection:bg-blue-500/30">
+    <div className="relative min-h-screen selection:bg-blue-500/30">
       <AnimatePresence mode="wait">
         {showSplash ? (
           <SplashScreen key="splash" onComplete={() => setShowSplash(false)} />
