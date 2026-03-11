@@ -5,7 +5,7 @@ import { cn } from "../lib/utils";
 
 const navItems = [
   { name: "Experience", href: "#experience", external: false },
-  { name: "Case Studies", href: "/case-studies", external: true },
+  { name: "Case Studies", href: "/#/case-studies", external: true },
   { name: "Achievements", href: "#achievements", external: false },
   { name: "Skills", href: "#skills", external: false },
   { name: "Education", href: "#education", external: false },
@@ -27,7 +27,7 @@ export function Navbar() {
     href: string,
     external: boolean,
   ) => {
-    if (external) return; // let the browser navigate normally
+    if (external) return;
     e.preventDefault();
     setMobileMenuOpen(false);
     const element = document.querySelector(href);
@@ -59,7 +59,6 @@ export function Navbar() {
             : "bg-transparent",
         )}
       >
-        {/* LOGO WITH TOOLTIP */}
         <div className="relative">
           
             href="#"
@@ -82,7 +81,6 @@ export function Navbar() {
           )}
         </div>
 
-        {/* DESKTOP NAV */}
         <nav className="hidden md:flex items-center gap-8">
           <ul className="flex items-center gap-8">
             {navItems.map((item) => (
@@ -99,7 +97,6 @@ export function Navbar() {
             ))}
           </ul>
 
-          {/* RESUME CTA */}
           
             href="/resume.pdf"
             target="_blank"
@@ -111,7 +108,6 @@ export function Navbar() {
           </a>
         </nav>
 
-        {/* MOBILE MENU BUTTON */}
         <button
           className="md:hidden text-white"
           onClick={() => setMobileMenuOpen(true)}
@@ -121,7 +117,6 @@ export function Navbar() {
         </button>
       </motion.header>
 
-      {/* MOBILE MENU */}
       {mobileMenuOpen && (
         <motion.div
           initial={{ opacity: 0 }}
@@ -154,7 +149,6 @@ export function Navbar() {
               </a>
             ))}
 
-            {/* RESUME CTA MOBILE */}
             
               href="/resume.pdf"
               target="_blank"
