@@ -1,14 +1,15 @@
 import { motion, useScroll, useMotionValueEvent } from "motion/react";
 import React, { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, FileText } from "lucide-react";
 import { cn } from "../lib/utils";
 
 const navItems = [
-  { name: "Experience", href: "#experience" },
-  { name: "Case Studies", href: "#projects" },
-  { name: "Achievements", href: "#achievements" },
-  { name: "Skills", href: "#skills" },
-  { name: "Education", href: "#education" },
+  { name: "Experience", href: "#experience", external: false },
+  { name: "Case Studies", href: "/case-studies", external: true },
+  { name: "Achievements", href: "#achievements", external: false },
+  { name: "Skills", href: "#skills", external: false },
+  { name: "Education", href: "#education", external: false },
+  { name: "Contact", href: "#contact", external: false },
 ];
 
 export function Navbar() {
@@ -24,7 +25,9 @@ export function Navbar() {
   const handleScroll = (
     e: React.MouseEvent<HTMLAnchorElement>,
     href: string,
+    external: boolean,
   ) => {
+    if (external) return; // let the browser navigate normally
     e.preventDefault();
     setMobileMenuOpen(false);
     const element = document.querySelector(href);
@@ -58,9 +61,9 @@ export function Navbar() {
       >
         {/* LOGO WITH TOOLTIP */}
         <div className="relative">
-          <a
+          
             href="#"
-            onClick={(e) => handleScroll(e, "body")}
+            onClick={(e) => handleScroll(e, "body", false)}
             onMouseEnter={() => setShowTooltip(true)}
             onMouseLeave={() => setShowTooltip(false)}
             className="font-display text-xl font-bold tracking-tighter text-white"
@@ -80,13 +83,13 @@ export function Navbar() {
         </div>
 
         {/* DESKTOP NAV */}
-        <nav className="hidden md:block">
+        <nav className="hidden md:flex items-center gap-8">
           <ul className="flex items-center gap-8">
             {navItems.map((item) => (
               <li key={item.name}>
-                <a
+                
                   href={item.href}
-                  onClick={(e) => handleScroll(e, item.href)}
+                  onClick={(e) => handleScroll(e, item.href, item.external)}
                   className="group relative text-sm font-medium text-muted-foreground transition-colors hover:text-white"
                 >
                   {item.name}
@@ -95,6 +98,17 @@ export function Navbar() {
               </li>
             ))}
           </ul>
+
+          {/* RESUME CTA */}
+          
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 rounded-md border border-blue-500 bg-blue-500/10 px-4 py-1.5 text-sm font-medium text-blue-400 transition-all duration-200 hover:bg-blue-500 hover:text-white"
+          >
+            <FileText className="h-3.5 w-3.5" />
+            Resume
+          </a>
         </nav>
 
         {/* MOBILE MENU BUTTON */}
@@ -130,15 +144,26 @@ export function Navbar() {
 
           <nav className="flex flex-1 flex-col items-center justify-center gap-8">
             {navItems.map((item) => (
-              <a
+              
                 key={item.name}
                 href={item.href}
-                onClick={(e) => handleScroll(e, item.href)}
+                onClick={(e) => handleScroll(e, item.href, item.external)}
                 className="font-display text-3xl font-medium text-white"
               >
                 {item.name}
               </a>
             ))}
+
+            {/* RESUME CTA MOBILE */}
+            
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 rounded-md border border-blue-500 bg-blue-500/10 px-6 py-2.5 text-xl font-medium text-blue-400"
+            >
+              <FileText className="h-5 w-5" />
+              Resume
+            </a>
           </nav>
         </motion.div>
       )}
