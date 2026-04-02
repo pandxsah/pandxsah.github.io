@@ -40,11 +40,12 @@
       "dates": "Oct 2023 – Aug 2024",
       "location": "Bengaluru, India",
       "bullets": [
-        "Retail Media & Ads: Managed Sponsored Ads accounts (SA, SB, SD) for advertisers and sellers — conducted ad account audits and delivered optimisation recommendations to improve ROAS and reduce ACOS across managed accounts.",
-        "Catalog & Retail Operations: Governed catalog quality standards across a 35-member global cross-functional team including PMs, BIAs, and Program Managers.",
-        "Reduced operational turnaround time by 35% through workflow automation and process redesign.",
-        "Designed SOP frameworks ensuring listing readiness and marketplace compliance across international markets, directly supporting campaign-readiness for advertiser accounts.",
-        "Partnered with Ads and Brand teams to align catalog governance with advertiser campaign performance objectives."
+        "Managed Sponsored Ads accounts (SP, SB, SD) and conducted account audits to improve ROAS and reduce ACoS across advertiser portfolios.",
+        "Governed catalog quality standards across a 35-member global cross-functional team including PMs, BIAs, and Program Managers.",
+        "Reduced operational turnaround time by 35% through workflow automation and process redesign, improving campaign readiness and execution scalability.",
+        "Designed SOP frameworks ensuring listing readiness and marketplace compliance across international markets.",
+        "Partnered with Ads and Brand teams to align catalog governance with campaign performance and conversion outcomes."
+        
       ]
     },
     {
@@ -53,11 +54,10 @@
       "dates": "Oct 2021 – Sep 2023",
       "location": "Bengaluru, India",
       "bullets": [
-        "Retail Media & Ads: Supported advertiser and seller ad accounts through Sponsored Ads campaign management (SA, SB, SD), account audits, and performance optimisation recommendations.",
-        "Catalog & Retail Operations: Maintained 99.8% catalog accuracy while improving processing efficiency by 27%.",
-        "Optimised product listings to strengthen search visibility, keyword coverage, and campaign readiness across IN marketplace.",
-        "Supported Prime Day and Great Indian Festival campaigns through cross-team coordination and listing readiness execution.",
-        "Contributed to SOP documentation and onboarding of new associates."
+        "Managed Sponsored Ads campaigns (SP, SB, SD), account audits, and optimisation support for advertiser and seller accounts on the IN marketplace.",
+        "Maintained 99.8% catalog accuracy while improving processing efficiency by 27%.",
+        "Strengthened product discoverability and conversion through keyword indexing and listing optimisation aligned with paid search strategy.",
+        "Supported Prime Day and Great Indian Festival campaigns through cross-team coordination and listing readiness execution."
       ]
     },
     {
@@ -66,7 +66,7 @@
       "dates": "Oct 2020 – Sep 2021",
       "location": "Mumbai, India",
       "bullets": [
-        "Increased closures by 27% through structured lead funnel optimisation and follow-up process redesign.",
+        "Increased closures by 27% through structured lead funnel optimisation and follow-up process improvements.",
         "Reduced customer complaints by 62% via proactive escalation handling and structured CRM workflows."
       ]
     },
@@ -159,94 +159,107 @@
       ]
     }
   ],
-  "skills": [
-    {
-      "group": "AMS Campaign Management",
-      "items": [
-        "Sponsored Products",
-        "Sponsored Brands",
-        "Sponsored Display",
-        "DSP",
-        "Budget Planning",
-        "Campaign Scaling",
-        "Bid Strategy"
-      ]
-    },
-    {
-      "group": "Listing & SEO Optimisation",
-      "items": [
-        "Keyword Research",
-        "Title & Bullet Optimisation",
-        "Backend Attributes",
-        "Organic Growth Strategy",
-        "Inorganic Growth Strategy",
-        "A+ Content Strategy"
-      ]
-    },
-    {
-      "group": "Seller & Vendor Central",
-      "items": [
-        "Seller Central Operations",
-        "Vendor Central Operations",
-        "Account Audits",
-        "Campaign Governance"
-      ]
-    },
-    {
-      "group": "Analytics & AI",
-      "items": [
-        "Amazon Marketing Cloud (AMC)",
-        "SQL",
-        "Incrementality Analysis",
-        "Custom GPT Workflows",
-        "Google Data Studio",
-        "Power BI"
-      ]
-    },
-    {
-      "group": "Client & Account Management",
-      "items": [
-        "Client Communication",
-        "Stakeholder Management",
-        "MBR/QBR Leadership",
-        "Cross-functional Team Coordination",
-        "Agency Management"
-      ]
-    },
-    {
-      "group": "Tools & Platforms",
-      "items": [
-        "Pacvue",
-        "Skai",
-        "CitrusAd",
-        "Criteo",
-        "Amazon Ads Console"
-      ]
-    },
-    {
-      "group": "Performance Metrics",
-      "items": [
-        "ROAS",
-        "TACoS",
-        "ACoS",
-        "CTR",
-        "Conversion Rate",
-        "GMV",
-        "YoY Growth",
-        "NTB Rate",
-        "Impressions"
-      ]
-    },
-    {
-      "group": "Operational Delivery",
-      "items": [
-        "Campaign Governance",
-        "Budget Pacing",
-        "Reporting Cadence",
-        "Pod Leadership"
-      ]
-    }
-  ],
+ "skills": [
+  {
+    "group": "Marketplace Growth & Strategy",
+    "items": [
+      "Portfolio Ownership",
+      "Marketplace Growth Strategy",
+      "Category Expansion",
+      "Demand Mapping",
+      "Search Coverage Strategy",
+      "Revenue Scaling"
+    ]
+  },
+  {
+    "group": "Revenue & Performance Management",
+    "items": [
+      "Budget Allocation",
+      "Investment Prioritisation",
+      "TACoS Optimisation",
+      "ACoS Optimisation",
+      "Profitability Management",
+      "GMV Growth",
+      "YoY Growth Analysis"
+    ]
+  },
+  {
+    "group": "Amazon Advertising & Retail Media",
+    "items": [
+      "Sponsored Products",
+      "Sponsored Brands",
+      "Sponsored Display",
+      "DSP",
+      "Campaign Scaling",
+      "Bid Strategy"
+    ]
+  },
+  {
+    "group": "Listing, SEO & Conversion",
+    "items": [
+      "Keyword Research",
+      "Search Term Expansion",
+      "Title & Bullet Optimisation",
+      "Backend Attributes",
+      "A+ Content Strategy",
+      "Conversion Rate Optimisation"
+    ]
+  },
+  {
+    "group": "Analytics & Incrementality",
+    "items": [
+      "Amazon Marketing Cloud (AMC)",
+      "SQL",
+      "Incrementality Analysis",
+      "Performance Analysis",
+      "Custom GPT Workflows",
+      "Dashboarding (Power BI, Data Studio)"
+    ]
+  },
+  {
+    "group": "Automation & Process Scalability",
+    "items": [
+      "Workflow Automation",
+      "SOP Design",
+      "Reporting Frameworks",
+      "Campaign Governance",
+      "Execution Standardisation"
+    ]
+  },
+  {
+    "group": "Client & Stakeholder Leadership",
+    "items": [
+      "Client Communication",
+      "Stakeholder Management",
+      "MBR & QBR Leadership",
+      "Business Reviews",
+      "Growth Strategy Presentation",
+      "Agency Collaboration"
+    ]
+  },
+  {
+    "group": "Tools & Platforms",
+    "items": [
+      "Pacvue",
+      "Skai",
+      "CitrusAd",
+      "Criteo",
+      "Amazon Ads Console",
+      "Seller Central",
+      "Vendor Central"
+    ]
+  },
+  {
+    "group": "Leadership & Execution",
+    "items": [
+      "Pod Leadership",
+      "Cross-functional Collaboration",
+      "Budget Pacing",
+      "Performance Reporting",
+      "Campaign Execution"
+    ]
+  }
+]
   "education": [
     {
       "institution": "Mumbai University",
