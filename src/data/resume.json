@@ -1,317 +1,35 @@
 {
-  "basics": {
-    "name": "Sahil Pandita",
-    "title": "Marketplace Growth & Performance Specialist",
-    "image": "/profile.webp",
-    "summary": "Marketplace Growth & Portfolio Owner with 5.5+ years of experience driving revenue and category expansion across Amazon and eCommerce ecosystems. Currently owning end-to-end marketplace performance across multi-brand portfolios spanning EU9 and MENA markets at Flywheel Digital (Omnicom), managing €1.5M+ in annual media investments and influencing multi-million GMV outcomes. Proven track record of scaling category demand, balancing growth and profitability through TACoS optimisation, and building repeatable optimisation frameworks to improve execution at scale. Experienced in leading cross-functional teams, influencing client investment decisions, and contributing to new business strategy.",
-    "location": "Bangalore, India",
-    "email": "pandxsah@gmail.com",
-    "phone": "+91-7780871070",
-    "links": [
-      "www.linkedin.com/in/isahilpandita",
-      "pandxsah.github.io"
-    ]
+  "name": "Sahil Pandita",
+  "title": "Amazon Growth Specialist & Founder of Aventas",
+  "location": "India",
+  "bio": "I turn Amazon accounts into predictable growth systems. I fix structure problems so revenue scales consistently.",
+  "key_metrics": {
+    "monthly_gmv": "£4.5M+",
+    "annual_ad_spend": "€1.5M+",
+    "yoy_growth": "28.3%",
+    "category_uplift": "46%"
   },
   "experience": [
     {
-      "company": "Flywheel Digital (Omnicom Global Solutions)",
-      "role": "Marketplace Growth & Performance Specialist",
-      "dates": "Aug 2024 – Present",
-      "location": "Bengaluru, India",
-      "bullets": [
-        "Owned end-to-end marketplace performance across a multi-brand client portfolio spanning EU9 and MENA markets, managing €1.5M+ in annual media investments across Sponsored Ads, CitrusAd, and Criteo.",
-        "Drove 28.34% YoY GMV growth by identifying category-level demand gaps, expanding high-intent keyword coverage, and reallocating budgets toward revenue-accretive segments.",
-        "Influenced multi-market revenue outcomes supporting £4.5M+ monthly GMV (UK) and €2.5M+ (Italy) while maintaining stable TACoS and 4–6x ROAS across €25K–€150K/month investment bands.",
-        "Generated 38% revenue uplift vs BFCM forecast through strategic portfolio-level budget reallocation and prioritisation during peak season.",
-        "Enabled 46% YoY category expansion, including 900% growth in a key sub-category, by aligning search expansion, listing optimisation, and media scaling strategies.",
-        "Balanced growth and profitability by stabilising TACoS while scaling investments across high-performing segments.",
-        "Built and standardised optimisation frameworks and reporting structures to improve execution consistency and scalability across accounts.",
-        "Led a 4-member performance pod, ensuring delivery quality, optimisation consistency, and reporting cadence across multi-brand portfolios.",
-        "Acted as client-facing owner across MBRs and QBRs, translating business objectives into marketplace growth strategies and influencing investment decisions.",
-        "Leveraged AMC and SQL-based analysis to validate incremental revenue contribution, identify growth levers, and track competitor and category trends.",
-        "Contributed to new business strategy by designing marketplace growth frameworks and onboarding approaches for prospective client pitches."
-      
-      
-      ]
+      "company": "Aventas",
+      "role": "Founder",
+      "description": "Building an early-stage agency focused on marketplace management and scaling brands on Amazon and Flipkart."
     },
     {
-      "company": "Amazon Ads",
-      "role": "Catalog Specialist I – Process Owner",
-      "dates": "Oct 2023 – Aug 2024",
-      "location": "Bengaluru, India",
-      "bullets": [
-        "Managed Sponsored Ads accounts (SP, SB, SD) and conducted account audits to improve ROAS and reduce ACoS across advertiser portfolios.",
-        "Governed catalog quality standards across a 35-member global cross-functional team including PMs, BIAs, and Program Managers.",
-        "Reduced operational turnaround time by 35% through workflow automation and process redesign, improving campaign readiness and execution scalability.",
-        "Designed SOP frameworks ensuring listing readiness and marketplace compliance across international markets.",
-        "Partnered with Ads and Brand teams to align catalog governance with campaign performance and conversion outcomes."
-        
-      ]
-    },
-    {
-      "company": "Amazon Ads",
-      "role": "Catalog Associate",
-      "dates": "Oct 2021 – Sep 2023",
-      "location": "Bengaluru, India",
-      "bullets": [
-        "Managed Sponsored Ads campaigns (SP, SB, SD), account audits, and optimisation support for advertiser and seller accounts on the IN marketplace.",
-        "Maintained 99.8% catalog accuracy while improving processing efficiency by 27%.",
-        "Strengthened product discoverability and conversion through keyword indexing and listing optimisation aligned with paid search strategy.",
-        "Supported Prime Day and Great Indian Festival campaigns through cross-team coordination and listing readiness execution."
-      ]
-    },
-    {
-      "company": "BYJU'S",
-      "role": "Business Development Associate",
-      "dates": "Oct 2020 – Sep 2021",
-      "location": "Mumbai, India",
-      "bullets": [
-        "Increased closures by 27% through structured lead funnel optimisation and follow-up process improvements.",
-        "Reduced customer complaints by 62% via proactive escalation handling and structured CRM workflows."
-      ]
-    },
-    {
-      "company": "Independent Projects",
-      "role": "Content & Growth Experimentation",
-      "dates": "2017 – Present",
-      "location": "Bengaluru, India",
-      "bullets": [
-        "Create and test short-form content formats across Instagram Reels, YouTube Shorts, and LinkedIn to study algorithm behaviour and organic growth mechanics.",
-        "Experiment with hooks, storytelling structures, and trend adaptation to improve reach and engagement across platforms.",
-        "Apply data-driven experimentation frameworks - similar to paid media optimisation - to iterate on content performance and refine virality levers.",
-        "Conduct ongoing analysis of platform algorithms, content formats, and audience behaviour to build a personal framework for organic growth strategy."
-      ]
+      "company": "Operon Studio",
+      "role": "Founder",
+      "description": "Developing a content operating system for creators to streamline their workflow."
     }
   ],
-  "achievements": [
-    {
-      "metric": "£4.5M+ / €2.5M+",
-      "context": "monthly GMV supported across EU9 multi-brand Amazon portfolios (UK and Italy as primary markets)."
-    },
-    {
-      "metric": "28.34%",
-      "context": "YoY GMV growth delivered through demand-driven search expansion, keyword prioritisation, and media optimisation."
-    },
-    {
-      "metric": "46%",
-      "context": "YoY category expansion driven, including 900% YoY growth in a key sub-category through aggressive keyword coverage and media scaling."
-    },
-    {
-      "metric": "900%",
-      "context": "YoY scale achieved in one key sub-category through demand gap analysis and keyword expansion."
-    },
-    {
-      "metric": "38%",
-      "context": "revenue uplift vs BFCM forecast through strategic demand-based budget reallocation across EU portfolios."
-    },
-    {
-      "metric": "4–6x",
-      "context": "ROAS maintained while stabilising TACoS and ACOS across €25K–€150K/month investment bands."
-    },
-    {
-      "metric": "35%",
-      "context": "reduction in operational turnaround time through workflow automation and process redesign at Amazon Ads."
-    },
-    {
-      "metric": "99.8%",
-      "context": "catalog accuracy maintained while improving processing efficiency by 27% at Amazon Ads."
-    }
+  "interests": [
+    "Motorcycling (Pulsar F250)",
+    "Photo & Video Editing",
+    "Web Development"
   ],
-  "projects": [
-    {
-      "title": "AMC Incrementality & NTB Analysis",
-      "description": "Built custom AMC SQL queries to measure new-to-brand customer acquisition and validate incremental revenue contribution across EU Amazon portfolios. Used outputs to guide budget allocation decisions in MBRs and QBRs.",
-      "tags": [
-        "Amazon Marketing Cloud",
-        "SQL",
-        "Incrementality",
-        "NTB Reporting"
-      ]
-    },
-    {
-      "title": "BFCM Demand-Based Budget Reallocation",
-      "description": "Designed and executed a real-time budget reallocation strategy during Black Friday / Cyber Monday, shifting spend toward high-converting demand segments. Delivered 38% revenue uplift vs forecast across EU portfolios.",
-      "tags": [
-        "Budget Strategy",
-        "Amazon Ads",
-        "BFCM",
-        "ROAS Optimisation"
-      ]
-    },
-    {
-      "title": "Sub-Category Scale - 900% YoY Growth",
-      "description": "Identified an underpenetrated product sub-category through demand gap analysis and keyword expansion. Scaled from near-zero to 900% YoY growth within 12 months, contributing to 46% total category expansion.",
-      "tags": [
-        "Category Expansion",
-        "Keyword Strategy",
-        "Demand Gap Analysis",
-        "Amazon Search"
-      ]
-    },
-    {
-      "title": "EU9 Portfolio Listing Optimisation",
-      "description": "Executed end-to-end listing optimisation across EU9 markets - keyword research, title and bullet rewrites, backend attribute mapping, and A+ content alignment - directly improving organic search rank and campaign conversion rates.",
-      "tags": [
-        "Listing Optimisation",
-        "Amazon SEO",
-        "Organic Growth",
-        "EU9 Markets"
-      ]
-    }
-  ],
- "skills": [
-  {
-    "group": "Marketplace Growth & Strategy",
-    "items": [
-      "Portfolio Ownership",
-      "Marketplace Growth Strategy",
-      "Category Expansion",
-      "Demand Mapping",
-      "Search Coverage Strategy",
-      "Revenue Scaling"
-    ]
-  },
-  {
-    "group": "Revenue & Performance Management",
-    "items": [
-      "Budget Allocation",
-      "Investment Prioritisation",
-      "TACoS Optimisation",
-      "ACoS Optimisation",
-      "Profitability Management",
-      "GMV Growth",
-      "YoY Growth Analysis"
-    ]
-  },
-  {
-    "group": "Amazon Advertising & Retail Media",
-    "items": [
-      "Sponsored Products",
-      "Sponsored Brands",
-      "Sponsored Display",
-      "DSP",
-      "Campaign Scaling",
-      "Bid Strategy"
-    ]
-  },
-  {
-    "group": "Listing, SEO & Conversion",
-    "items": [
-      "Keyword Research",
-      "Search Term Expansion",
-      "Title & Bullet Optimisation",
-      "Backend Attributes",
-      "A+ Content Strategy",
-      "Conversion Rate Optimisation"
-    ]
-  },
-  {
-    "group": "Analytics & Incrementality",
-    "items": [
-      "Amazon Marketing Cloud (AMC)",
-      "SQL",
-      "Incrementality Analysis",
-      "Performance Analysis",
-      "Custom GPT Workflows",
-      "Dashboarding (Power BI, Data Studio)"
-    ]
-  },
-  {
-    "group": "Automation & Process Scalability",
-    "items": [
-      "Workflow Automation",
-      "SOP Design",
-      "Reporting Frameworks",
-      "Campaign Governance",
-      "Execution Standardisation"
-    ]
-  },
-  {
-    "group": "Client & Stakeholder Leadership",
-    "items": [
-      "Client Communication",
-      "Stakeholder Management",
-      "MBR & QBR Leadership",
-      "Business Reviews",
-      "Growth Strategy Presentation",
-      "Agency Collaboration"
-    ]
-  },
-  {
-    "group": "Tools & Platforms",
-    "items": [
-      "Pacvue",
-      "Skai",
-      "CitrusAd",
-      "Criteo",
-      "Amazon Ads Console",
-      "Seller Central",
-      "Vendor Central"
-    ]
-  },
-  {
-    "group": "Leadership & Execution",
-    "items": [
-      "Pod Leadership",
-      "Cross-functional Collaboration",
-      "Budget Pacing",
-      "Performance Reporting",
-      "Campaign Execution"
-    ]
-  }
-]
   "education": [
     {
       "institution": "Mumbai University",
-      "degree": "B.E. in Electronics & Telecommunication",
-      "dates": "Aug 2016 – Oct 2020",
-      "location": "Navi Mumbai, India"
-    }
-  ],
-  "certifications": [
-    "Amazon Sponsored Ads Certification – Amazon Ads",
-    "Amazon DSP Certification – Amazon Ads",
-    "AI-Powered Performance Ads Certification – Google Ads",
-    "Google Analytics 4 (GA4) – In Progress",
-    "Project Management Professional (PMP) – In Progress"
-  ],
-  "awards": [
-    "Recipient of the Above & Beyond Award: Apr 2022, Nov 2022, May 2023, Jun 2023",
-    "Acknowledged with the Rookie Star Award: Aug 2022",
-    "Acknowledged with the Rise n Shine Award: Sep 2025"
-  ],
-  "extra": [
-    {
-      "title": "Leadership & Initiatives",
-      "items": [
-        {
-          "role": "Sr. Operations Manager",
-          "organization": "TECHxSIESGST",
-          "dates": "Apr 2018 – Feb 2020",
-          "location": "SIESGST",
-          "bullets": [
-            "Led 5-member team and generated INR 2M+ revenue via BYTECAMP Hackathon execution."
-          ]
-        },
-        {
-          "role": "Events Manager & Core Representative",
-          "organization": "IEEExSIESGST",
-          "dates": "Jan 2017 – Jan 2019",
-          "location": "SIESGST",
-          "bullets": [
-            "Managed 200+ student community; secured Best Team award at IEEE Bombay Conference."
-          ]
-        },
-        {
-          "role": "Volunteer, Design & Marketing",
-          "organization": "NSS",
-          "dates": "Jul 2017 – Jul 2019",
-          "location": "SIESGST",
-          "bullets": [
-            "Executed education and health outreach programs for underserved communities."
-          ]
-        }
-      ]
+      "degree": "Your Degree Name"
     }
   ]
 }

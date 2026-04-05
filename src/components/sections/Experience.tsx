@@ -16,14 +16,14 @@ export function Experience() {
             company="Flywheel Digital (Omnicom)"
             period="2024 – Present"
             bullets={[
-              "Owned marketplace growth across multi-brand EU9 and MENA portfolios — managing <span class='text-white font-bold'>€1.5M+ in annual media investments.</span>",
+              "Owned marketplace growth across multi-brand EU9 and MENA portfolios - managing <span class='text-white font-bold'>€1.5M+ in annual media investments.</span>",
               "Drove <span class='text-white font-bold'>28.34% YoY GMV growth</span> by rebuilding account structure and scaling high-intent demand across key categories.",
               "Influenced multi-market revenue outcomes supporting <span class='text-white font-bold'>£4.5M+ monthly GMV (UK)</span> and <span class='text-white font-bold'>€2.5M+ (Italy).</span>",
               "Delivered <span class='text-white font-bold'>38% BFCM revenue uplift</span> through demand-based budget reallocation across EU portfolios.",
               "Enabled <span class='text-white font-bold'>46% YoY category expansion</span>, including <span class='text-white font-bold'>900% growth in a key sub-category</span>, by aligning search expansion, listing optimisation, and media scaling strategies.",
               "Balanced growth and profitability by stabilising TACoS while scaling investments across high-performing segments.",
               "Built and standardised optimisation frameworks and reporting structures to improve execution consistency and scalability across accounts.",
-              "Led a <span class='text-white font-bold'>4-member performance pod</span> — accountable for delivery quality, optimisation consistency, and reporting cadence across multi-brand portfolios.",
+              "Led a <span class='text-white font-bold'>4-member performance pod</span> - accountable for delivery quality, optimisation consistency, and reporting cadence across multi-brand portfolios.",
               "Acted as client-facing owner across MBRs and QBRs, translating business objectives into marketplace growth strategies and influencing investment decisions.",
               "Leveraged <span class='text-white font-bold'>AMC and SQL-based analysis</span> to validate incremental revenue contribution, identify growth levers, and track competitor and category trends.",
               "Contributed to new business strategy by designing marketplace growth frameworks and onboarding approaches for prospective client pitches.",
@@ -70,9 +70,9 @@ export function Experience() {
             company="Independent Projects"
             period="2017 – Present"
             bullets={[
-              "Create and test short-form content formats across Instagram Reels, YouTube Shorts, and LinkedIn — studying algorithm behaviour and organic growth mechanics.",
+              "Create and test short-form content formats across Instagram Reels, YouTube Shorts, and LinkedIn - studying algorithm behaviour and organic growth mechanics.",
               "Experiment with hooks, storytelling structures, and trend adaptation to improve reach and engagement across platforms.",
-              "Apply data-driven experimentation frameworks — similar to paid media optimisation — to iterate on content performance and refine virality levers.",
+              "Apply data-driven experimentation frameworks - similar to paid media optimisation - to iterate on content performance and refine virality levers.",
               "Conduct ongoing analysis of platform algorithms, content formats, and audience behaviour to build a personal framework for organic growth strategy.",
             ]}
           />
