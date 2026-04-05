@@ -1,33 +1,30 @@
-import { OpenAIStream, StreamingTextResponse } from 'ai';
-import OpenAI from 'openai';
+import { openai } from '@ai-sdk/openai';
+import { streamText } from 'ai';
 
-export const config = { runtime: 'edge' };
-
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+// Set runtime to edge for fastest performance
+export const config = {
+  runtime: 'edge',
+};
 
 export default async function handler(req: Request) {
+  // Extract messages and context from the request body
   const { messages, context } = await req.json();
 
-  const response = await openai.chat.completions.create({
-    model: 'gpt-4o-mini',
-    stream: true,
+  const result = await streamText({
+    model: openai('gpt-4o-mini'), // High performance, low cost
     messages: [
       {
         role: 'system',
         content: `You are the AI Digital Twin of Sahil Pandita.
         Context: ${JSON.stringify(context)}.
-        Personality: Professional, data-driven (Amazon growth expert), slightly witty.
+        Personality: Professional, data-driven (Amazon growth expert), concise.
         Rules: 
-        1. Emphasize metrics like £4.5M Monthly GMV if asked about growth.
-        2. Mention the Pulsar F250 if asked about bikes.
-        3. Keep answers concise (1-2 sentences) suitable for a search bar interface.`,
+        1. Focus on Amazon growth systems and metrics.
+        2. Keep answers to 1-2 impactful sentences.`,
       },
       ...messages,
     ],
   });
 
-  const stream = OpenAIStream(response);
-  return new StreamingTextResponse(stream);
+  return result.toDataStreamResponse();
 }
