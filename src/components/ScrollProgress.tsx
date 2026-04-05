@@ -1,8 +1,7 @@
-import { motion, useScroll, useSpring } from "motion/react";
+import { motion, useScroll, useSpring } from 'motion/react';
 
 export function ScrollProgress() {
   const { scrollYProgress } = useScroll();
-
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
@@ -11,8 +10,8 @@ export function ScrollProgress() {
 
   return (
     <motion.div
+      className="fixed top-0 left-0 right-0 h-1 bg-brand-accent z-[60] origin-left"
       style={{ scaleX }}
-      className="fixed left-0 right-0 top-0 z-[9999] h-[3px] origin-left bg-gradient-to-r from-blue-500 via-indigo-500 to-blue-500"
     />
   );
 }

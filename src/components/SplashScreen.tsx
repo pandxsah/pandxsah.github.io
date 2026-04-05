@@ -1,16 +1,15 @@
-import { motion } from "motion/react";
-import { useEffect, useState } from "react";
+import { motion } from 'motion/react';
+import { useEffect, useState } from 'react';
 
 interface SplashScreenProps {
   onComplete: () => void;
-  key?: string | number;
 }
 
 export function SplashScreen({ onComplete }: SplashScreenProps) {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const duration = 1500; // 1.5s
+    const duration = 1500;
     const interval = 30;
     const steps = duration / interval;
     let currentStep = 0;
@@ -21,7 +20,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
 
       if (currentStep >= steps) {
         clearInterval(timer);
-        setTimeout(onComplete, 300); // Small delay before unmounting
+        setTimeout(onComplete, 300);
       }
     }, interval);
 
@@ -30,9 +29,9 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
 
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-background"
+      className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-brand-bg"
       initial={{ opacity: 1 }}
-      exit={{ opacity: 0, y: -20, filter: "blur(10px)" }}
+      exit={{ opacity: 0, y: -20, filter: 'blur(10px)' }}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="relative flex flex-col items-center">
@@ -40,18 +39,16 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          className="mb-8 flex h-24 w-24 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.02] shadow-[0_0_40px_rgba(59,130,246,0.15)] backdrop-blur-xl"
+          transition={{ duration: 0.5, ease: 'easeOut' }}
+          className="mb-8 flex h-24 w-24 items-center justify-center rounded-2xl border border-brand-border bg-brand-surface shadow-[0_0_40px_rgba(0,242,255,0.15)] backdrop-blur-xl"
         >
-          <span className="font-display text-4xl font-bold tracking-tighter text-gradient-primary">
-            SP
-          </span>
+          <span className="font-mono text-4xl font-bold tracking-tighter text-brand-accent">SP</span>
         </motion.div>
 
-        {/* Loading Bar Container */}
+        {/* Loading Bar */}
         <div className="h-1 w-48 overflow-hidden rounded-full bg-white/10">
           <motion.div
-            className="h-full bg-gradient-to-r from-blue-500 to-indigo-500"
+            className="h-full bg-brand-accent"
             style={{ width: `${progress}%` }}
             layout
           />
@@ -59,7 +56,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
 
         {/* Progress Text */}
         <motion.div
-          className="mt-4 font-mono text-xs text-muted-foreground"
+          className="mt-4 font-mono text-xs text-brand-text-muted"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}

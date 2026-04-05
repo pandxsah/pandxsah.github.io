@@ -1,67 +1,55 @@
-import { useState, useEffect } from "react";
-import { AnimatePresence } from "motion/react";
-import { AnimatedBackground } from "./components/AnimatedBackground";
-import { SplashScreen } from "./components/SplashScreen";
-import { Hero } from "./components/Hero";
-import { Experience } from "./components/Experience";
-import { Projects } from "./components/Projects";
-import { Achievements } from "./components/Achievements";
-import { Skills } from "./components/Skills";
-import { Education } from "./components/Education";
-import { Extra } from "./components/Extra";
-import { Contact } from "./components/Contact";
-import { Navbar } from "./components/Navbar";
-import { ScrollProgress } from "./components/ScrollProgress";
-import { ScrollToTop } from "./components/ScrollToTop";
+import { AnimatePresence } from 'motion/react';
+import { useState } from 'react';
 
-// Google Analytics — replace G-F5FJJB0KZP with your real Measurement ID
-function useAnalytics() {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://www.googletagmanager.com/gtag/js?id=G-F5FJJB0KZP";
-    script.async = true;
-    document.head.appendChild(script);
+import { SplashScreen } from './components/SplashScreen';
+import { ScrollProgress } from './components/ScrollProgress';
+import { ScrollToTop } from './components/ScrollToTop';
+import { Navigation } from './components/Navigation';
+import { Footer } from './components/Footer';
 
-    const inline = document.createElement("script");
-    inline.text = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-F5FJJB0KZP');
-    `;
-    document.head.appendChild(inline);
-  }, []);
-}
+import { Hero } from './components/sections/Hero';
+import { Manifesto } from './components/sections/Manifesto';
+import { Outcomes } from './components/sections/Outcomes';
+import { Skills } from './components/sections/Skills';
+import { Experience } from './components/sections/Experience';
+import { Extra } from './components/sections/Extra';
+import { Contact } from './components/sections/Contact';
 
 export default function App() {
   const [showSplash, setShowSplash] = useState(true);
 
-  useAnalytics();
-
   return (
-    <div className="relative min-h-screen selection:bg-blue-500/30">
-      <AnimatePresence mode="wait">
-        {showSplash ? (
-          <SplashScreen key="splash" onComplete={() => setShowSplash(false)} />
-        ) : (
-          <div key="main-content">
-            <ScrollProgress />
-            <AnimatedBackground />
-            <Navbar />
-            <main className="relative z-10 flex flex-col gap-16 md:gap-32 pb-32">
-              <Hero />
-              <Experience />
-              <Projects />
-              <Achievements />
-              <Skills />
-              <Education />
-              <Extra />
-              <Contact />
-            </main>
-            <ScrollToTop />
-          </div>
+    <>
+      <AnimatePresence>
+        {showSplash && (
+          <SplashScreen onComplete={() => setShowSplash(false)} />
         )}
       </AnimatePresence>
-    </div>
+
+      {!showSplash && (
+        <div className="min-h-screen selection:bg-brand-accent selection:text-brand-bg font-sans relative">
+          <ScrollProgress />
+          <ScrollToTop />
+
+          {/* Background Glows */}
+          <div className="glow-mesh top-[-100px] left-[-100px] opacity-40"></div>
+          <div className="glow-mesh bottom-[-200px] right-[-100px] opacity-30"></div>
+
+          <Navigation />
+
+          <main>
+            <Hero />
+            <Manifesto />
+            <Outcomes />
+            <Skills />
+            <Experience />
+            <Extra />
+            <Contact />
+          </main>
+
+          <Footer />
+        </div>
+      )}
+    </>
   );
 }
